@@ -6526,5 +6526,8 @@ button.close {
 }
 .bio-container .bio-description {
   font-size: 1.6em;
+  font-weight: 200;
+  margin: 0;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=theme.css.map */
