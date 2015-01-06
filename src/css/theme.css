@@ -6512,4 +6512,18 @@ button.close {
     display: none !important;
   }
 }
+.bio-container {
+  margin-top: 200px;
+}
+.bio-container .bio-portrait {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.bio-container .bio-name {
+  font-size: 48px;
+}
+.bio-container .bio-description {
+  font-size: 2em;
+}
 /*# sourceMappingURL=theme.css.map */
