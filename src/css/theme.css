@@ -6539,6 +6539,7 @@ a:hover {
 }
 .bio-container .bio-link {
   font-size: 1.2em;
+  line-height: 1.8;
 }
 .portfolio-container {
   margin-top: 30px;
@@ -6550,9 +6551,6 @@ a:hover {
   height: 200px;
   background-color: #eee;
   width: 100%;
-}
-.portfolio-container .portfolio-row:last-child {
-  margin-bottom: -30px;
 }
 .text-small-caps {
   font-variant: small-caps;
