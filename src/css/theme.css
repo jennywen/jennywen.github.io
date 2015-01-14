@@ -6517,7 +6517,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #099;
+  color: #096;
 }
 .bio-container {
   margin-top: 100px;
@@ -6540,15 +6540,18 @@ a:hover {
 .bio-container .bio-link {
   font-size: 1.2em;
 }
-.portfolio-row .portfolio-item {
+.portfolio-container {
+  margin-top: 30px;
+}
+.portfolio-container .portfolio-row .portfolio-item {
   margin-bottom: 30px;
 }
-.portfolio-row .portfolio-item .portfolio-img {
+.portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   height: 200px;
-  background-color: #808080;
+  background-color: #eee;
   width: 100%;
 }
-.portfolio-row:last-child {
+.portfolio-container .portfolio-row:last-child {
   margin-bottom: -30px;
 }
 .text-small-caps {

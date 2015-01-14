@@ -53,7 +53,7 @@ a {
   color: @text-color;
   &:hover {
     text-decoration: none;
-    color: #099;
+    color: #096;
   }
 }
 
@@ -79,17 +79,21 @@ a {
     font-size: 1.2em;
   }
 }
-.portfolio-row{
-  .portfolio-item {
-    .portfolio-img {
-      height: 200px;
-      background-color: #808080;
-      width: 100%;
+
+.portfolio-container {
+  margin-top: 30px;
+  .portfolio-row{
+    .portfolio-item {
+      .portfolio-img {
+        height: 200px;
+        background-color: #eee;
+        width: 100%;
+      }
+      margin-bottom: 30px;
     }
-    margin-bottom: 30px;
-  }
-  &:last-child {
-    margin-bottom: -30px;
+    &:last-child {
+      margin-bottom: -30px;
+    }
   }
 }
 
