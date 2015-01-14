@@ -49,8 +49,17 @@
 @import "../utilities.less";
 @import "../responsive-utilities.less";
 
+a {
+  color: @text-color;
+  &:hover {
+    text-decoration: none;
+    color: #099;
+  }
+}
+
 .bio-container {
   margin-top: 100px;
+  margin-bottom: 100px;
   .bio-portrait {
     width: 150px;
     height: 150px;
@@ -64,6 +73,23 @@
     font-weight: 200;
     margin: 0;
     line-height: 1.8;
+  }
+
+  .bio-link {
+    font-size: 1.2em;
+  }
+}
+.portfolio-row{
+  .portfolio-item {
+    .portfolio-img {
+      height: 200px;
+      background-color: #808080;
+      width: 100%;
+    }
+    margin-bottom: 30px;
+  }
+  &:last-child {
+    margin-bottom: -30px;
   }
 }
 
