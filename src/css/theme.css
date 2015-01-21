@@ -6545,7 +6545,7 @@ a:hover {
   line-height: 1.8;
 }
 .portfolio-container {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .portfolio-container .portfolio-row .portfolio-item {
   margin-bottom: 30px;
@@ -6563,8 +6563,5 @@ a:hover {
   height: 400px;
   background-color: #eee;
   width: 100%;
-}
-.text-small-caps {
-  font-variant: small-caps;
 }
 /*# sourceMappingURL=theme.css.map */
