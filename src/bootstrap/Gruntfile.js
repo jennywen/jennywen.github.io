@@ -321,9 +321,13 @@ module.exports = function (grunt) {
         src: 'docs/_jade/customizer-nav.jade',
         dest: 'docs/_includes/nav/customize.html'
       },
-      compile: {
-        src: '../jade/*.jade',
+      compileIndex: {
+        src: '../jade/index.jade',
         dest: '../../index.html'
+      },
+      compilePortfolio: {
+        src: '../jade/portfolio.jade',
+        dest: '../../portfolio.html'
       }
     },
 
@@ -360,7 +364,7 @@ module.exports = function (grunt) {
       },
       jade: {
         files: '../jade/*.jade',
-        tasks: 'jade:compile'
+        tasks: ['jade:compileIndex', 'jade:compilePortfolio']
       }
     },
 

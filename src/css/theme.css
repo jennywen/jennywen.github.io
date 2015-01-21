@@ -1563,7 +1563,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1030px;
   }
 }
 .container-fluid {
@@ -6537,7 +6537,10 @@ a:hover {
   margin: 0;
   line-height: 1.8;
 }
-.bio-container .bio-link {
+.bio-container .bio-link-container {
+  margin-top: 10px;
+}
+.bio-container .bio-link-container .bio-link {
   font-size: 1.2em;
   line-height: 1.8;
 }
@@ -6549,6 +6552,15 @@ a:hover {
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   height: 200px;
+  background-color: #eee;
+  width: 100%;
+}
+.portfolio-page-container {
+  margin-top: 100px;
+  line-height: 1.4;
+}
+.portfolio-page-container .portfolio-page-img {
+  height: 400px;
   background-color: #eee;
   width: 100%;
 }

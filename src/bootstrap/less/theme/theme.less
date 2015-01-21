@@ -49,6 +49,10 @@
 @import "../utilities.less";
 @import "../responsive-utilities.less";
 
+// Variables
+@body-margin: 100px;
+
+
 a {
   color: @text-color;
   &:hover {
@@ -58,8 +62,8 @@ a {
 }
 
 .bio-container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: @body-margin;
+  margin-bottom: @body-margin;
   .bio-portrait {
     width: 150px;
     height: 150px;
@@ -74,10 +78,12 @@ a {
     margin: 0;
     line-height: 1.8;
   }
-
-  .bio-link {
-    font-size: 1.2em;
-    line-height: 1.8;
+  .bio-link-container {
+    margin-top: 10px;
+    .bio-link {
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
   }
 }
 
@@ -92,6 +98,16 @@ a {
       }
       margin-bottom: 30px;
     }
+  }
+}
+
+.portfolio-page-container {
+  margin-top: @body-margin;
+  line-height: 1.4;
+  .portfolio-page-img {
+    height: 400px;
+    background-color: #eee;
+    width: 100%;
   }
 }
 
