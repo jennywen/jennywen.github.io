@@ -6548,11 +6548,13 @@ a:hover {
   margin-top: 50px;
 }
 .portfolio-container .portfolio-row .portfolio-item {
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #eee;
   margin-bottom: 30px;
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
-  height: 200px;
-  background-color: #eee;
   width: 100%;
 }
 .portfolio-page-container {
