@@ -99,11 +99,14 @@ a {
       overflow: hidden;
       width: 100%;
       background-color: #eee;
+      &:hover {
+        opacity: 0.8;
+      }
       .portfolio-img {
         width: 100%;
-        .transition(all 0.3s ease)
+        transition: all 0.5 ease-in-out;
         &:hover {
-          .transition-transform(scale(1.01));
+          transform: scale(1.01);
         }
       }
       margin-bottom: 30px;

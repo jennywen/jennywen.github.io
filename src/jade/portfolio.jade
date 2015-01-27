@@ -13,27 +13,54 @@ html(lang="en")
 			.portfolio-page-title
 				h3.tk-arvo.portfolio-page-header Accomplishments 
 				.portfolio-page-subhead Coursera
-			p.portfolio-page-description 
+			.portfolio-page-description 
+				.font-regular Role
 				| I led this project at Coursera, and worked as the primary designer and developer on it before I ended my internship. I also worked with a product manager, and my mentor to develop the business requirements and the engineering specifications for fleshing it out.
-			p.portfolio-page-description
+			.portfolio-page-description
+				.font-regular Context 
 				| The motivation for this design was to increase the value of the Verified Certificate and provide a personal space dedicated to learners on Coursera to view their accomplishments, and share them with their employers and peers. The design was validated through A/B testing and user testing with design walkthroughs.
-			.portfolio-page-img
-			p.portfolio-page-description
-				| To set the context for the solution...
+			
+			.portfolio-page-description
 				.font-regular User mindset and motivation (Why would a user come here, and how would they feel?!):
 				ul 
 					li Completed a course, want to review their achievement
 					li Exploratory - "What is this 'Accomplishments' doo-hicky?!"
+			.portfolio-page-description
 				.font-regular Key tasks they want to complete:
 				ul
 					li See their completed courses
 					li Access the artifacts stored from the courses they've completed
-					li Share their accomplishments with employers (current or potential) - this has high value based on user testing
+					li Share their accomplishments with employers (current or potential) - this has high value based on user testing		
+			.portfolio-page-description
+				.font-regular Emotional pay-off
 				ul
-					li What would a user say when everything went well? About their own Acc
-			.row
-				.col-md-7
-					.portfolio-page-img
-				.col-md-5
-					p.portfolio-page-description
-						| Cheese and wine bavarian bergkase ricotta. Cottage cheese cheeseburger lancashire ricotta cheese on toast rubber cheese gouda brie. Halloumi brie roquefort macaroni cheese cheese on toast the big cheese blue castello boursin. Fondue.
+					li What would a user say when everything went well? About their own Accomplishments?
+						ul
+							li "I'm proud of all of my accomplishments"
+							li "I wish I had more accomplishments to display"
+					li What might they say about Coursera?
+						ul
+							li "Coursera offers credentials I can share with others in ways I wouldn't with a traditional education"
+							li "Coursera is easy to use and convenient"
+					li What should we anticipate they would want to do right after this?
+						ul
+							li Sign-up for additional courses
+							li Share their certificate or course record
+			.portfolio-page-description
+				.font-regular Existing Solution
+				| Prior to the redesign, learners had the capability of sharing their course completions, but many learners were not aware that they were able to do this. The following diagram shows the flow of the pages in existence, and how they were accessed. Views labeled "shareable" notes that these custom pages could be viewed by anyone with the URL.
+				img.img-block(src="assets/img/portfolio/courserecord_flow.png")
+				p Here's an original task analysis of the decided flow of sharing a course completion with someone else, say and employer (current or potential): 
+				img.img-block(src="assets/img/portfolio/courserecord_hta.png")
+				p Based on the task analysis, we found it possible to simplify the flow into four views - combining the Course Record and Verification pages, as shown in the below diagram:
+				img.img-block(src="assets/img/portfolio/accomplishments_flow.png")
+			.portfolio-page-description
+				.font-regular User Testing
+				| With a high-fidelity mockup inVision mockup, we performed user testing through UserTesting.com with five participants, as well as two participants internally to gauge directional feedback and pain points in the design. Here's what we found:
+				ul 
+					li Participants referred to the page colloquially as their "Profile", suggesting that it would be worth exploring the expansion of this page to be a social profile
+					li Participants intuitively clicked on certificate thumbnails to find what they were looking for, as opposed to text links
+					li They emphasized the value of LinkedIn sharing in their verbal feedback
+					li Participants found that the section that stated "Other Completed Courses" lacked detail in comparison to their Verified Certificate courses
+					li There was confusion around the number of shareable URLs and where they were placed
+				p From prior A/B tests that we ran across the site's paid products, we also found that learners were motivated by the idea of linking their identity to their learning, which influenced the voice behind some of the copy in the Accomplishments page.

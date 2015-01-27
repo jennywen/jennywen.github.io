@@ -6558,14 +6558,15 @@ a:active {
   background-color: #eee;
   margin-bottom: 30px;
 }
+.portfolio-container .portfolio-row .portfolio-item:hover {
+  opacity: 0.8;
+}
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   width: 100%;
+  transition: all 0.5 ease-in-out;
 }
-.transition(all 0.3s ease) .portfolio-container .portfolio-row .portfolio-item .portfolio-img:hover {
-  -webkit-transition: -webkit-transform scale(1.01);
-  -moz-transition: -moz-transform scale(1.01);
-  -o-transition: -o-transform scale(1.01);
-  transition: transform scale(1.01);
+.portfolio-container .portfolio-row .portfolio-item .portfolio-img:hover {
+  transform: scale(1.01);
 }
 .portfolio-page-container {
   padding: 100px 0;
