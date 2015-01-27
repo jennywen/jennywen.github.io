@@ -6515,13 +6515,17 @@ button.close {
 a {
   color: #555555;
 }
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
   color: #096;
 }
+.body-container {
+  background-color: #f3f3f3;
+  margin: 30px;
+}
 .bio-container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
 }
 .bio-container .bio-portrait {
   width: 150px;
@@ -6557,9 +6561,14 @@ a:hover {
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   width: 100%;
 }
+.transition(all 0.3s ease) .portfolio-container .portfolio-row .portfolio-item .portfolio-img:hover {
+  -webkit-transition: -webkit-transform scale(1.01);
+  -moz-transition: -moz-transform scale(1.01);
+  -o-transition: -o-transform scale(1.01);
+  transition: transform scale(1.01);
+}
 .portfolio-page-container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
   line-height: 1.4;
 }
 .portfolio-page-container .portfolio-page-title {

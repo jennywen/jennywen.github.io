@@ -55,15 +55,19 @@
 
 a {
   color: @text-color;
-  &:hover {
+  &:hover, &:active {
     text-decoration: none;
     color: #096;
   }
 }
 
+.body-container {
+  background-color: #f3f3f3;
+  margin: 30px;
+}
+
 .bio-container {
-  margin-top: @body-margin;
-  margin-bottom: @body-margin;
+  padding: @body-margin 0;
   .bio-portrait {
     width: 150px;
     height: 150px;
@@ -97,6 +101,10 @@ a {
       background-color: #eee;
       .portfolio-img {
         width: 100%;
+        .transition(all 0.3s ease)
+        &:hover {
+          .transition-transform(scale(1.01));
+        }
       }
       margin-bottom: 30px;
     }
@@ -104,8 +112,7 @@ a {
 }
 
 .portfolio-page-container {
-  margin-top: @body-margin;
-  margin-bottom: @body-margin;
+  padding: @body-margin 0;
   line-height: 1.4;
   .portfolio-page-title {
     margin-bottom: 50px;
