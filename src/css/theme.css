@@ -6573,6 +6573,11 @@ a:active {
   padding: 100px 0;
   line-height: 1.4;
 }
+@media (min-width: 992px) {
+  .portfolio-page-container {
+    width: 940px;
+  }
+}
 .portfolio-page-container .portfolio-page-home-link {
   margin-bottom: 50px;
   font-size: 1.2em;
@@ -6585,7 +6590,6 @@ a:active {
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-subhead {
   font-size: 1.3em;
-  font-weight: 600;
 }
 .portfolio-page-container .portfolio-page-img {
   width: 100%;

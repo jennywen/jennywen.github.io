@@ -118,6 +118,10 @@ a {
 .portfolio-page-container {
   padding: @body-margin 0;
   line-height: 1.4;
+
+  @media (min-width: @screen-md-min) {
+    width: 940px
+  }
   .portfolio-page-home-link {
     margin-bottom: 50px;
     font-size: 1.2em;
@@ -129,7 +133,6 @@ a {
     }
     .portfolio-page-subhead {
       font-size: 1.3em;
-      font-weight: 600;
     }
   }
   .portfolio-page-img {
