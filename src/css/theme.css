@@ -6520,9 +6520,16 @@ a:active {
   text-decoration: none;
   color: #096;
 }
-.body-container {
-  background-color: #f3f3f3;
-  margin: 30px;
+@media (min-width: 767px) {
+  .body-container {
+    background-color: #f3f3f3;
+    margin: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .body-container {
+    padding: 30px;
+  }
 }
 .bio-container {
   padding: 100px 0;
@@ -6552,7 +6559,7 @@ a:active {
   margin-top: 50px;
 }
 .portfolio-container .portfolio-row .portfolio-item {
-  height: 235px;
+  height: 240px;
   overflow: hidden;
   width: 100%;
   background-color: #eee;
@@ -6584,12 +6591,14 @@ a:active {
 }
 .portfolio-page-container .portfolio-page-title {
   margin-bottom: 50px;
+  margin-top: 100px;
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-header {
   font-size: 2.0em;
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-subhead {
   font-size: 1.3em;
+  font-weight: 200;
 }
 .portfolio-page-container .portfolio-page-img {
   width: 100%;
@@ -6605,5 +6614,6 @@ a:active {
 }
 .font-regular {
   font-weight: 400;
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=theme.css.map */
