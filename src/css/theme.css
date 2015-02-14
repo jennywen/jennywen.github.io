@@ -6552,7 +6552,7 @@ a:active {
   margin-top: 50px;
 }
 .portfolio-container .portfolio-row .portfolio-item {
-  height: 200px;
+  height: 235px;
   overflow: hidden;
   width: 100%;
   background-color: #eee;
@@ -6585,6 +6585,7 @@ a:active {
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-subhead {
   font-size: 1.3em;
+  font-weight: 600;
 }
 .portfolio-page-container .portfolio-page-img {
   width: 100%;
