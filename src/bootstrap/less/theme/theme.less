@@ -99,8 +99,9 @@ a {
       overflow: hidden;
       width: 100%;
       background-color: #eee;
+      opacity: 0.9;
       &:hover {
-        opacity: 0.8;
+        opacity: 1;
       }
       .portfolio-img {
         width: 100%;
@@ -117,6 +118,10 @@ a {
 .portfolio-page-container {
   padding: @body-margin 0;
   line-height: 1.4;
+  .portfolio-page-home-link {
+    margin-bottom: 50px;
+    font-size: 1.2em;
+  }
   .portfolio-page-title {
     margin-bottom: 50px;
     .portfolio-page-header {
@@ -127,8 +132,6 @@ a {
     }
   }
   .portfolio-page-img {
-    height: 400px;
-    background-color: #eee;
     width: 100%;
   }
   .portfolio-page-description {

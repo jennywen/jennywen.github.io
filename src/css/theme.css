@@ -6556,10 +6556,11 @@ a:active {
   overflow: hidden;
   width: 100%;
   background-color: #eee;
+  opacity: 0.9;
   margin-bottom: 30px;
 }
 .portfolio-container .portfolio-row .portfolio-item:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   width: 100%;
@@ -6572,6 +6573,10 @@ a:active {
   padding: 100px 0;
   line-height: 1.4;
 }
+.portfolio-page-container .portfolio-page-home-link {
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
 .portfolio-page-container .portfolio-page-title {
   margin-bottom: 50px;
 }
@@ -6582,8 +6587,6 @@ a:active {
   font-size: 1.3em;
 }
 .portfolio-page-container .portfolio-page-img {
-  height: 400px;
-  background-color: #eee;
   width: 100%;
 }
 .portfolio-page-container .portfolio-page-description {
