@@ -6512,6 +6512,15 @@ button.close {
     display: none !important;
   }
 }
+html {
+  height: 100%;
+  background-color: #FFF;
+}
+html body {
+  background-color: #f3f3f3;
+  margin: 30px;
+  height: 100%;
+}
 a {
   color: #555555;
 }
@@ -6519,15 +6528,6 @@ a:hover,
 a:active {
   text-decoration: none;
   color: #096;
-}
-.body-container {
-  padding: 0 30px;
-}
-@media (min-width: 767px) {
-  .body-container {
-    background-color: #f3f3f3;
-    margin: 30px;
-  }
 }
 .bio-container {
   padding: 100px 0;
