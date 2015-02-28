@@ -6515,10 +6515,10 @@ button.close {
 html {
   height: 100%;
   background-color: #FFF;
+  padding: 30px;
 }
 html body {
   background-color: #f3f3f3;
-  margin: 30px;
   height: 100%;
 }
 a {
