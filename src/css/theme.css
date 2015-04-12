@@ -6517,9 +6517,16 @@ html {
   background-color: #FFF;
   padding: 30px;
 }
+@media (max-width: 767px) {
+  html {
+    padding: 0;
+  }
+}
 html body {
-  background-color: #f3f3f3;
+  background-color: #f1f1f1;
   min-height: 100%;
+  margin-bottom: 30px;
+  padding: 0 30px;
 }
 a {
   color: #555555;
@@ -6556,16 +6563,33 @@ a:active {
 .portfolio-container {
   margin-top: 50px;
 }
+@media (min-width: 767px) {
+  .portfolio-container .portfolio-row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+@media (min-width: 767px) {
+  .portfolio-container .portfolio-row .portfolio-col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 .portfolio-container .portfolio-row .portfolio-item {
-  height: 240px;
+  height: 250px;
   overflow: hidden;
   width: 100%;
   background-color: #eee;
   opacity: 0.9;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .portfolio-container .portfolio-row .portfolio-item:hover {
   opacity: 1;
+}
+@media (max-width: 767px) {
+  .portfolio-container .portfolio-row .portfolio-item {
+    height: auto;
+  }
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
   width: 100%;
@@ -6585,7 +6609,7 @@ a:active {
 }
 .portfolio-page-container .portfolio-page-home-link {
   margin-bottom: 50px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .portfolio-page-container .portfolio-page-title {
   margin-bottom: 50px;
@@ -6597,6 +6621,11 @@ a:active {
 .portfolio-page-container .portfolio-page-title .portfolio-page-subhead {
   font-size: 1.3em;
   font-weight: 200;
+}
+.portfolio-page-container .portfolio-page-votepad-convo {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
 }
 .portfolio-page-container .portfolio-page-img {
   width: 100%;
