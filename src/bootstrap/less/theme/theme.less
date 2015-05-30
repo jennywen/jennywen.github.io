@@ -71,6 +71,10 @@ html {
 
 a {
   color: @text-color;
+  &:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #096;
+  }
   &:hover, &:active {
     text-decoration: none;
     color: #096;
@@ -84,11 +88,14 @@ a {
 
 .bio-container {
   padding: @body-margin 0;
+  text-align: center;
   .bio-portrait {
     width: 150px;
     height: 150px;
+    margin: auto;
   }
   .bio-name {
+    text-transform: lowercase;
     font-size: 36px;
     font-weight: 300;
   }

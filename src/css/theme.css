@@ -6531,6 +6531,10 @@ html body {
 a {
   color: #555555;
 }
+a:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #096;
+}
 a:hover,
 a:active {
   text-decoration: none;
@@ -6538,12 +6542,15 @@ a:active {
 }
 .bio-container {
   padding: 100px 0;
+  text-align: center;
 }
 .bio-container .bio-portrait {
   width: 150px;
   height: 150px;
+  margin: auto;
 }
 .bio-container .bio-name {
+  text-transform: lowercase;
   font-size: 36px;
   font-weight: 300;
 }
