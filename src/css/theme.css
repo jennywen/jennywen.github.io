@@ -6545,14 +6545,14 @@ a:active {
   text-align: center;
 }
 .bio-container .bio-portrait {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: auto;
 }
 .bio-container .bio-name {
   text-transform: lowercase;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 500;
 }
 .bio-container .bio-description {
   font-size: 1.6em;
@@ -6561,7 +6561,7 @@ a:active {
   line-height: 1.8;
 }
 .bio-container .bio-link-container {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 .bio-container .bio-link-container .bio-link {
   font-size: 1.2em;
@@ -6624,6 +6624,7 @@ a:active {
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-header {
   font-size: 2.2em;
+  text-transform: lowercase;
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-subhead {
   font-size: 1.3em;
