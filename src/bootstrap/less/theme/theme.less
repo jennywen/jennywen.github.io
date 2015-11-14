@@ -91,6 +91,10 @@ a {
 }
 
 .bio-container {
+  @media (min-width: @screen-md-min) {
+    width: 840px
+  }
+
   padding: @body-margin 0;
   text-align: center;
   .bio-portrait {
@@ -162,7 +166,6 @@ a {
     }
 
     .portfolio-item {
-      height: 250px;
       overflow: hidden;
       width: 100%;
       background-color: #eee;
@@ -186,7 +189,7 @@ a {
   font-family: @font-family-serif;
 
   @media (min-width: @screen-md-min) {
-    width: 940px
+    width: 700px
   }
   .portfolio-page-home-link {
     margin-bottom: 50px;
@@ -229,8 +232,58 @@ a {
     }
   }
   .portfolio-page-nav {
-    margin-top: 100px;
-    font-size: 1.2em;
+    width: 100%;
+
+    .portfolio-page-nav-next, .portfolio-page-nav-prev {
+      position: fixed;
+      top: 45%;
+      height: 60px;
+      width: 150px;
+      padding: 10px;
+      opacity: 0.5;
+      color: @gray;
+
+      &:hover {
+        opacity: 1;
+        .portfolio-page-nav-direction {
+          color: @brand-primary;
+        }
+      }
+      @media (max-width: @screen-md-min) {
+        position: static;
+      }
+    }
+
+    .portfolio-page-nav-next {
+      right: 32px;
+      border-right: 1px solid @gray;
+      &:hover {
+        padding-right: 15px;
+        .portfolio-page-nav-direction, .portfolio-page-nav-name {
+          .animation(bounceOutRight .1s cubic-bezier(.12,-0.15,.46,1.63););
+        }
+      }
+    }
+
+    .portfolio-page-nav-prev {
+      left: 32px;
+      border-left: 1px solid @gray;
+
+      &:hover {
+        padding-left: 15px;
+        .portfolio-page-nav-direction, .portfolio-page-nav-name {
+          .animation(bounceOutLeft .1s cubic-bezier(.12,-0.15,.46,1.63););
+        }
+      }
+    }
+  }
+
+  .portfolio-page-nav-direction {
+    font-family: @font-family-sans-serif;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
   }
 }
 
@@ -370,4 +423,44 @@ a {
 	-moz-animation-name: fadeInDown;
 	-o-animation-name: fadeInDown;
 	animation-name: fadeInDown;
+}
+
+@-moz-keyframes bounceOutRight {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(-5px); }
+}
+
+@-webkit-keyframes bounceOutRight {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(-5px); }
+}
+
+@-o-keyframes bounceOutRight {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(-5px); }
+}
+
+@keyframes bounceOutLeft {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(5px); }
+}
+
+@-moz-keyframes bounceOutLeft {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(5px); }
+}
+
+@-webkit-keyframes bounceOutLeft {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(5px); }
+}
+
+@-o-keyframes bounceOutLeft {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(5px); }
+}
+
+@keyframes bounceOutLeft {
+  0%{ transform: translateX(0px); }
+  100%{ transform: translateX(5px); }
 }
