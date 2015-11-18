@@ -6640,8 +6640,16 @@ a:active {
   line-height: 1.4;
   font-family: Alegreya, "Times New Roman", Times, serif;
 }
+.portfolio-page-container .portfolio-page-img-container {
+  margin: 0px auto 30px auto;
+}
 @media (min-width: 992px) {
-  .portfolio-page-container {
+  .portfolio-page-container .portfolio-page-img-container {
+    width: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-page-container .portfolio-page-text-container {
     width: 700px;
   }
 }
@@ -6651,10 +6659,12 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .portfolio-page-container .portfolio-page-title {
   margin-bottom: 50px;
   margin-top: 100px;
+  text-align: center;
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-header {
   font-size: 2.2em;
@@ -6671,13 +6681,22 @@ a:active {
   margin-right: 30px;
 }
 .portfolio-page-container .portfolio-page-img {
+  width: 800px;
+}
+.portfolio-page-container .portfolio-page-caption {
+  color: #8F8E8E;
+  text-align: center;
+  margin: 15px auto 0px auto;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-page-container .img-block {
   width: 100%;
-  background-color: #fff;
 }
 .portfolio-page-container .portfolio-page-description {
   font-weight: 200;
-  font-size: 1.4em;
-  margin: 30px 0;
+  font-size: 20px;
+  margin: 30px auto;
   line-height: 1.8em;
 }
 .portfolio-page-container .portfolio-page-description a,
@@ -6758,6 +6777,7 @@ a:active {
   font-size: 0.8em;
   letter-spacing: 1px;
   font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .animated {
   -webkit-animation-fill-mode: both;
