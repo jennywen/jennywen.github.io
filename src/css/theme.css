@@ -6547,6 +6547,11 @@ a:active {
   padding: 100px 0;
   text-align: center;
 }
+@media (min-width: 992px) {
+  .bio-container {
+    width: 840px;
+  }
+}
 .bio-container .bio-portrait {
   width: 100px;
   height: 100px;
@@ -6614,7 +6619,6 @@ a:active {
   }
 }
 .portfolio-container .portfolio-row .portfolio-item {
-  height: 250px;
   overflow: hidden;
   width: 100%;
   background-color: #eee;
@@ -6636,9 +6640,17 @@ a:active {
   line-height: 1.4;
   font-family: Alegreya, "Times New Roman", Times, serif;
 }
+.portfolio-page-container .portfolio-page-img-container {
+  margin: 0px auto 30px auto;
+}
 @media (min-width: 992px) {
-  .portfolio-page-container {
-    width: 940px;
+  .portfolio-page-container .portfolio-page-img-container {
+    width: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-page-container .portfolio-page-text-container {
+    width: 700px;
   }
 }
 .portfolio-page-container .portfolio-page-home-link {
@@ -6647,10 +6659,12 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .portfolio-page-container .portfolio-page-title {
   margin-bottom: 50px;
   margin-top: 100px;
+  text-align: center;
 }
 .portfolio-page-container .portfolio-page-title .portfolio-page-header {
   font-size: 2.2em;
@@ -6667,13 +6681,22 @@ a:active {
   margin-right: 30px;
 }
 .portfolio-page-container .portfolio-page-img {
+  width: 800px;
+}
+.portfolio-page-container .portfolio-page-caption {
+  color: #8F8E8E;
+  text-align: center;
+  margin: 15px auto 0px auto;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-page-container .img-block {
   width: 100%;
-  background-color: #fff;
 }
 .portfolio-page-container .portfolio-page-description {
   font-weight: 200;
-  font-size: 1.4em;
-  margin: 30px 0;
+  font-size: 20px;
+  margin: 30px auto;
   line-height: 1.8em;
 }
 .portfolio-page-container .portfolio-page-description a,
@@ -6685,8 +6708,64 @@ a:active {
   padding-bottom: 0;
 }
 .portfolio-page-container .portfolio-page-nav {
-  margin-top: 100px;
-  font-size: 1.2em;
+  width: 100%;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next,
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
+  position: fixed;
+  top: 45%;
+  height: 60px;
+  width: 150px;
+  padding: 10px;
+  opacity: 0.5;
+  color: #555555;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover,
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover {
+  opacity: 1;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover .portfolio-page-nav-direction,
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover .portfolio-page-nav-direction {
+  color: #2aca9a;
+}
+@media (max-width: 992px) {
+  .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next,
+  .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
+    position: static;
+  }
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next {
+  right: 32px;
+  border-right: 1px solid #555555;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover {
+  padding-right: 15px;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover .portfolio-page-nav-direction,
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover .portfolio-page-nav-name {
+  -webkit-animation: bounceOutRight 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  -o-animation: bounceOutRight 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  animation: bounceOutRight 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
+  left: 32px;
+  border-left: 1px solid #555555;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover {
+  padding-left: 15px;
+}
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover .portfolio-page-nav-direction,
+.portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover .portfolio-page-nav-name {
+  -webkit-animation: bounceOutLeft 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  -o-animation: bounceOutLeft 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  animation: bounceOutLeft 0.1s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+}
+.portfolio-page-container .portfolio-page-nav-direction {
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
 }
 .text-small-caps {
   font-variant: small-caps;
@@ -6698,6 +6777,7 @@ a:active {
   font-size: 0.8em;
   letter-spacing: 1px;
   font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .animated {
   -webkit-animation-fill-mode: both;
@@ -6805,5 +6885,69 @@ a:active {
   -moz-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+@-moz-keyframes bounceOutRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@-webkit-keyframes bounceOutRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@-o-keyframes bounceOutRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@-moz-keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@-webkit-keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@-o-keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
 }
 /*# sourceMappingURL=theme.css.map */
