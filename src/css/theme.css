@@ -6622,7 +6622,8 @@ a:active {
   overflow: hidden;
   width: 100%;
   background-color: #eee;
-  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .portfolio-container .portfolio-row .portfolio-item {
@@ -6634,6 +6635,17 @@ a:active {
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-img:hover {
   transform: scale(1.01);
+}
+.portfolio-container .portfolio-row .portfolio-item .portfolio-item-caption {
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: Alegreya, "Times New Roman", Times, serif;
+}
+.portfolio-container .portfolio-row .portfolio-item .portfolio-item-caption .font-regular {
+  color: #fff;
 }
 .portfolio-page-container {
   padding: 100px 0;

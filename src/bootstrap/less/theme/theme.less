@@ -173,6 +173,7 @@ a {
       overflow: hidden;
       width: 100%;
       background-color: #eee;
+      position: relative;
       @media (max-width: @screen-xs-max) {
         height: auto;
       }
@@ -182,7 +183,18 @@ a {
           transform: scale(1.01);
         }
       }
-      margin-bottom: 10px;
+      .portfolio-item-caption {
+        bottom: 20px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        font-family: @font-family-serif;
+        .font-regular {
+          color: #fff;
+        }
+      }
+      margin-bottom: 20px;
     }
   }
 }
