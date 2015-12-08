@@ -6653,6 +6653,12 @@ a:active {
     width: 700px;
   }
 }
+.portfolio-page-container .portfolio-page-text-container .portfolio-page-section-header {
+  font-size: 24px;
+  font-weight: 800;
+  color: #555555;
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .portfolio-page-container .portfolio-page-home-link {
   margin-bottom: 50px;
   font-size: 1.0em;
