@@ -6771,12 +6771,21 @@ a:active {
 @media (max-width: 992px) {
   .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next,
   .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
-    position: static;
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 15px;
   }
 }
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next {
   right: 32px;
   border-right: 1px solid #555555;
+}
+@media (max-width: 992px) {
+  .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next {
+    border-right: 0;
+    right: 0;
+  }
 }
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover {
   padding-right: 15px;
@@ -6790,6 +6799,12 @@ a:active {
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
   left: 32px;
   border-left: 1px solid #555555;
+}
+@media (max-width: 992px) {
+  .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
+    border-left: 0;
+    left: 0;
+  }
 }
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover {
   padding-left: 15px;

@@ -291,7 +291,6 @@ a {
   }
   .portfolio-page-nav {
     width: 100%;
-
     .portfolio-page-nav-next, .portfolio-page-nav-prev {
       position: fixed;
       top: 45%;
@@ -308,13 +307,20 @@ a {
         }
       }
       @media (max-width: @screen-md-min) {
-        position: static;
+        position: relative;
+        width: 50%;
+        float: left;
+        padding: 15px;
       }
     }
 
     .portfolio-page-nav-next {
       right: 32px;
       border-right: 1px solid @gray;
+      @media (max-width: @screen-md-min) {
+        border-right: 0;
+        right: 0;
+      }
       &:hover {
         padding-right: 15px;
         .portfolio-page-nav-direction, .portfolio-page-nav-name {
@@ -326,7 +332,10 @@ a {
     .portfolio-page-nav-prev {
       left: 32px;
       border-left: 1px solid @gray;
-
+      @media (max-width: @screen-md-min) {
+        border-left: 0;
+        left: 0;
+      }
       &:hover {
         padding-left: 15px;
         .portfolio-page-nav-direction, .portfolio-page-nav-name {
