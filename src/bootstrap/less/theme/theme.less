@@ -248,6 +248,9 @@ a {
     margin-bottom: 50px;
     margin-top: 100px;
     text-align: center;
+    @media (max-width: @screen-md-min) {
+      padding: 0 15px;
+    }
     .portfolio-page-header {
         font-size: 2.2em;
         font-weight: 800;
@@ -309,7 +312,6 @@ a {
       @media (max-width: @screen-md-min) {
         position: relative;
         width: 50%;
-        float: left;
         padding: 15px;
       }
     }
@@ -320,6 +322,7 @@ a {
       @media (max-width: @screen-md-min) {
         border-right: 0;
         right: 0;
+        float: right;
       }
       &:hover {
         padding-right: 15px;
@@ -335,6 +338,7 @@ a {
       @media (max-width: @screen-md-min) {
         border-left: 0;
         left: 0;
+        float: left;
       }
       &:hover {
         padding-left: 15px;

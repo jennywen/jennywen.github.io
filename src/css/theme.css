@@ -6706,6 +6706,11 @@ a:active {
   margin-top: 100px;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .portfolio-page-container .portfolio-page-title {
+    padding: 0 15px;
+  }
+}
 .portfolio-page-container .portfolio-page-title .portfolio-page-header {
   font-size: 2.2em;
   font-weight: 800;
@@ -6773,7 +6778,6 @@ a:active {
   .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
     position: relative;
     width: 50%;
-    float: left;
     padding: 15px;
   }
 }
@@ -6785,6 +6789,7 @@ a:active {
   .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next {
     border-right: 0;
     right: 0;
+    float: right;
   }
 }
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-next:hover {
@@ -6804,6 +6809,7 @@ a:active {
   .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev {
     border-left: 0;
     left: 0;
+    float: left;
   }
 }
 .portfolio-page-container .portfolio-page-nav .portfolio-page-nav-prev:hover {
