@@ -6677,6 +6677,9 @@ a:active {
     width: 800px;
   }
 }
+.portfolio-page-container .portfolio-page-section-separator {
+  height: 20px;
+}
 @media (min-width: 992px) {
   .portfolio-page-container .portfolio-page-text-container {
     width: 700px;
