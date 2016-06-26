@@ -52,25 +52,13 @@
 // Variables
 @body-margin: 100px;
 
-html {
-  height: 100%;
-  background-color: #FFF;
-  padding: 30px;
-
-  @media (max-width: @screen-xs-max) {
+body {
+  min-height: 100%;
+  padding: 0 20px;
+  font-family: @font-family-sans-serif;
+  @media (max-width: @screen-sm-max) {
     padding: 0;
-  }
-
-  body {
-    background-color: #f4f4f4;
-    min-height: 100%;
-    margin-bottom: 30px;
-    padding: 0 30px;
-    font-family: @font-family-sans-serif;
-    @media (max-width: @screen-sm-max) {
-      padding: 0;
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -89,9 +77,9 @@ a {
   }
 }
 
-.body-container {
-  @media (min-width: @screen-xs-max) {
-  }
+.hero {
+  height: 90%;
+  padding-top: 15%;
 }
 
 .bio-container {
@@ -99,7 +87,7 @@ a {
     padding: 0;
   }
   @media (min-width: @screen-md-min) {
-    width: 840px
+    width: 500px
   }
   padding: @body-margin 0;
   text-align: center;
@@ -114,9 +102,11 @@ a {
     animation-duration: 0.5s;
   }
   .bio-name {
-    font-size: 36px;
+    font-size: 64px;
     font-weight: 800;
-    color: @gray;
+    line-height: 87px;
+    margin-bottom: 10px;
+    text-transform: lowercase;
     -webkit-animation-duration: 0.8s;
     -moz-animation-duration: 0.8s;
     -ms-animation-duration: 0.8s;
@@ -124,10 +114,10 @@ a {
     animation-duration: 0.8s;
   }
   .bio-description {
-    font-size: 1.6em;
+    font-size: 18px;
     font-weight: 200;
-    margin: 0;
-    line-height: 1.8;
+    margin-bottom: 40px;
+    line-height: 26px;
     -webkit-animation-duration: 0.7s;
     -moz-animation-duration: 0.7s;
     -ms-animation-duration: 0.7s;
@@ -135,7 +125,6 @@ a {
     animation-duration: 0.7s;
   }
   .bio-link-container {
-    margin-top: 16px;
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -ms-animation-duration: 1s;
@@ -151,12 +140,14 @@ a {
   }
 }
 
-.portfolio-page-img-container {
-
+footer {
+  height: 300px;
+  background-color: @gray-base;
+  color: #FFF;
+  margin: 70px -30px -30px -30px;;
 }
 
 .portfolio-container {
-  margin-top: 50px;
   -webkit-animation-duration: 1.1s;
   -moz-animation-duration: 1.1s;
   -ms-animation-duration: 1.1s;
@@ -178,14 +169,14 @@ a {
     .portfolio-item {
       overflow: hidden;
       width: 100%;
+      text-align: center;
       background-color: #eee;
       position: relative;
       @media (max-width: @screen-xs-max) {
         height: auto;
-        margin-bottom: 10px;
       }
       .portfolio-img {
-        width: 100%;
+        width: 75%;
         &:hover {
           transform: scale(1.01);
         }
@@ -204,7 +195,7 @@ a {
           color: #fff;
         }
       }
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
