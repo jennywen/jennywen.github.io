@@ -77,6 +77,10 @@ a {
   }
 }
 
+h3 {
+  font-weight: 700;
+}
+
 .hero {
   height: 90%;
   padding-top: 15%;
@@ -141,10 +145,22 @@ a {
 }
 
 footer {
-  height: 300px;
+  padding: 40px 0 80px 0;
   background-color: @gray-base;
   color: #FFF;
-  margin: 70px -30px -30px -30px;;
+  margin: 40px -20px -20px -20px;
+  font-size: 18px;
+
+  .footer-container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .img-circle {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .portfolio-container {
@@ -176,7 +192,7 @@ footer {
         height: auto;
       }
       .portfolio-img {
-        width: 75%;
+        width: 50%;
         &:hover {
           transform: scale(1.01);
         }
@@ -200,48 +216,85 @@ footer {
   }
 }
 
+.portfolio-page-hero {
+  height:250px;
+  background-color: #617E96;
+  margin-top: 20px;
+
+  .portfolio-page-home-link {
+    padding-top: 40px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: @font-family-sans-serif;
+    a {
+      margin-top: 40px;
+      color: #FFF;
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .portfolio-page-header {
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 72px;
+    position: absolute;
+    bottom: -36px;
+  }
+
+  .portfolio-page-text-container {
+    position: relative;
+    height: 100%;
+  }
+
+}
+
+.portfolio-page-text-container {
+  @media (min-width: @screen-md-min) {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: @screen-xs-max) {
+    padding: 0 15px;
+  }
+}
+
 .portfolio-page-container {
-  padding: @body-margin 0;
+  padding: 0 0 @body-margin 0;
   line-height: 1.4;
   font-family: @font-family-serif;
 
+  .portfolio-page-details {
+    max-width: 650px;
+    margin: 36px auto auto;
+    font-size: 18px;
+  }
+
   .portfolio-page-img-container {
-    margin: 0px auto 30px auto;
+    margin: 0px auto 40px auto;
     @media (min-width: @screen-md-min) {
       width: 800px
     }
+  }
+
+  .portfolio-page-section-header {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: @font-family-serif;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .portfolio-page-section-separator {
     height: 20px;
   }
 
-  .portfolio-page-text-container {
-    @media (min-width: @screen-md-min) {
-      width: 700px
-    }
-    @media (max-width: @screen-xs-max) {
-      padding: 0 15px;
-    }
-    .portfolio-page-section-header {
-      font-size: 24px;
-      font-weight: 800;
-      color: @gray;
-      font-family: @font-family-sans-serif;
-    }
-  }
 
-  .portfolio-page-home-link {
-    margin-bottom: 50px;
-    font-size: 1.0em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: @font-family-sans-serif;
-    text-align: center;
-  }
   .portfolio-page-title {
-    margin-bottom: 50px;
-    margin-top: 100px;
+    height: 60px;
     text-align: center;
     @media (max-width: @screen-md-min) {
       padding: 0 15px;
@@ -278,8 +331,8 @@ footer {
 
   .portfolio-page-description {
     font-weight: 200;
-    font-size: 20px;
-    margin: 30px auto;
+    font-size: 18px;
+    margin: 20px auto;
     line-height: 1.8em;
     a, a:hover, a:active, a:visited {
       color: @text-color;
@@ -312,8 +365,8 @@ footer {
     }
 
     .portfolio-page-nav-next {
-      right: 32px;
-      border-right: 1px solid @gray;
+      right: 0px;
+      border-right: 10px solid @gray;
       @media (max-width: @screen-md-min) {
         border-right: 0;
         right: 0;
@@ -321,6 +374,7 @@ footer {
       }
       &:hover {
         padding-right: 15px;
+        border-color: @brand-primary;
         .portfolio-page-nav-direction, .portfolio-page-nav-name {
           .animation(bounceOutRight .1s cubic-bezier(.12,-0.15,.46,1.63););
         }
@@ -328,8 +382,8 @@ footer {
     }
 
     .portfolio-page-nav-prev {
-      left: 32px;
-      border-left: 1px solid @gray;
+      left: 0px;
+      border-left: 10px solid @gray;
       @media (max-width: @screen-md-min) {
         border-left: 0;
         left: 0;
@@ -337,6 +391,7 @@ footer {
       }
       &:hover {
         padding-left: 15px;
+        border-color: @brand-primary;
         .portfolio-page-nav-direction, .portfolio-page-nav-name {
           .animation(bounceOutLeft .1s cubic-bezier(.12,-0.15,.46,1.63););
         }
