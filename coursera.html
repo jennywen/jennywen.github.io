@@ -11,23 +11,30 @@
     <link rel="stylesheet" href="src/css/theme.css">
   </head>
   <body>
+    <section class="portfolio-page-hero">
+      <div class="portfolio-page-text-container">
+        <div class="portfolio-page-home-link tk-europa"><strong><a href="index.html">jenny wen</a></strong></div>
+        <h2 class="tk-europa portfolio-page-header tk-europa">Coursera</h2>
+
+      </div>
+    </section>
     <div class="body-container">
       <div class="container portfolio-page-container tk-europa">
-        <div class="portfolio-page-home-link"><strong><a href="index.html">jenny wen</a></strong></div>
+        <div class="portfolio-page-details">
+          Designer + software engineer, Summer 2014
+        </div>
         <div class="portfolio-page-title">
-          <h3 class="tk-europa portfolio-page-header">Coursera</h3>
-          <div class="portfolio-page-subhead">Providing verifiable, universally-accessible education</div>
         </div>
         <div class="portfolio-page-img-container">
           <img src="assets/img/portfolio/coursera/coursera_hero.png" class="img-block portfolio-page-img">
         </div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Role</div>
+          <div class="portfolio-page-section-header">Role</div>
           I did two internships at Coursera in a hybrid product design/front-end engineering role on the Monetization team. I got down with data, crafted user experiences, and wrote reusable front-end components in React.
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Problem</div>
+          <div class="portfolio-page-section-header">Problem</div>
           Learners needed a way to view the courses they completed on Coursera, and to be provided credential value to the certificates they achieved. For a large portion of learners, they earned their first ever educational credential on our platform.
         </div>
         <div class="portfolio-page-text-container portfolio-page-description">
@@ -37,7 +44,7 @@
 On top of that, learners found it difficult to differentiate the types of courses we offered, and the levels of certification associated with them.         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">User mindset and motivation</div>
+          <div class="portfolio-page-section-header">User mindset and motivation</div>
           <ul>
             <li>Completed a course, want to review their achievement</li>
             <li>Exploratory - "What is this 'Accomplishments' doo-hicky?!"</li>
@@ -45,7 +52,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Key tasks they want to complete:</div>
+          <div class="portfolio-page-section-header">Key tasks they want to complete:</div>
           <ul>
             <li>See their completed courses</li>
             <li>Access the artifacts stored from the courses they've completed</li>
@@ -54,7 +61,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Emotional pay-off</div>
+          <div class="portfolio-page-section-header">Emotional pay-off</div>
           <ul>
             <li>What would a user say when everything went well? About their own Accomplishments?
               <ul>
@@ -78,7 +85,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Existing Solution</div>Prior to the redesign, learners had the capability of sharing their course completions, but many learners were not aware that they were able to do this. The following diagram shows the flow of the pages in existence, and how they were accessed. Views labeled "shareable" notes that these custom pages could be viewed by anyone with the URL.
+          <div class="portfolio-page-section-header">Existing Solution</div>Prior to the redesign, learners had the capability of sharing their course completions, but many learners were not aware that they were able to do this. The following diagram shows the flow of the pages in existence, and how they were accessed. Views labeled "shareable" notes that these custom pages could be viewed by anyone with the URL.
         </div>
         <div class="portfolio-page-img-container">
           <img src="assets/img/portfolio/courserecord_flow.png" class="img-block portfolio-page-img">
@@ -98,7 +105,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">User Testing</div>
+          <div class="portfolio-page-section-header">User Testing</div>
           We did a few rounds of user testing. We even tested our user testing script out on employees, internally, to make sure the instructions themselves weren't confusing, and we were asking the right questions.
         </div>
         <div class="portfolio-page-img-container">
@@ -120,7 +127,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Accomplishments - Main</div>
+          <div class="portfolio-page-section-header">Accomplishments - Main</div>
           Throughout the Accomplishments pages, we wanted to give the learner a feeling of ownership of the pages, so we added a header section with their name and photo - with room to grow as Coursera becomes more of a social learning platform. Additionally, although the pages were originally titled "Course Records", we chose to change the vocabulary to "Accomplishments" because that's what they were - we wanted to make a space that learners could share what they achieved on Coursera and felt proud while doing so.
         </div>
         <div class="portfolio-page-text-container portfolio-page-description">
@@ -147,7 +154,7 @@ On top of that, learners found it difficult to differentiate the types of course
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
           <br />
-          <div class="font-regular">Course Record</div>
+          <div class="portfolio-page-section-header">Course Record</div>
           The Course Record page is the detailed view of a course completion after a user clicks on the certificate thumbnail in the Accomplishments view. Its practicality exists in providing a link to the full-sized Certificate, as well as a detailed description of the course, which learners appreciated having, since it's not offered on the Certificate itself. When the learner is logged in, she'll see fields to copy the links to the Course Record and Certificate, in order to share them. In the previous Course Records pages, learners often had no idea that they were able to share these pages publicly - they thought it was just contained within their account.
         </div>
         <div class="portfolio-page-img-container">
@@ -155,7 +162,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Certificate</div>
+          <div class="portfolio-page-section-header">Certificate</div>
           Finally, the Certificate view features the PDF certificate contained within a browser viewer with a toolbar with explicit calls-to-action. The toolbar features a copy link to the Certificate for the learner to share their certificate, as well as a print link. We found from user research that although learners in some nations found the Certificate artifact not as important, there were learners in other parts of the world who had never received formal education, and for them, this was their only form of certification. As a result, providing them actions for using and sharing the Certificate was still a high priority.
         </div>
         <div class="portfolio-page-img-container">
@@ -163,7 +170,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Implementation</div>
+          <div class="portfolio-page-section-header">Implementation</div>
           <p>
             I worked on implementing most of the styling using the Bootstrap framework, Stylus and Jade. I also worked on some of the front-end logic which involved Backbone.js and our course catalog API.
           </p>
@@ -173,7 +180,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Credential Value</div>
+          <div class="portfolio-page-section-header">Credential Value</div>
           After shipping the Accomplishments section, we saw a significant increase in the number of people adding their certification to their Linkedin profiles. In May 2015, LinkedIn reported Coursera to be the 2nd top credential provider on their platform!
         </div>
         <div class="portfolio-page-img-container">
@@ -181,7 +188,7 @@ On top of that, learners found it difficult to differentiate the types of course
         </div>
         <div class="portfolio-page-section-separator"></div>
         <div class="portfolio-page-text-container portfolio-page-description">
-          <div class="font-regular">Further Inquiries</div>
+          <div class="portfolio-page-section-header">Further Inquiries</div>
           Although I left this project after my internship ended, I had unanswered questions about the real value of online credentials. I wondered if eventually the Accomplishments section would just become one module of a public-facing learner profile, that didn't only rely on certificates as proof of completion, but of projects, demos and examples of flipped classroom learning.
         </div>
 

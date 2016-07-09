@@ -146,19 +146,16 @@ h3 {
 
 footer {
   padding: 40px 0 80px 0;
-  background-color: @gray-base;
-  color: #FFF;
-  margin: 40px -20px -20px -20px;
   font-size: 18px;
 
   .footer-container {
-    max-width: 650px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 
     .img-circle {
-      width: 100%;
-      height: 100%;
+      width: 100px;
+      height: 100px;
     }
   }
 }
@@ -220,6 +217,7 @@ footer {
   height:250px;
   background-color: #617E96;
   margin-top: 20px;
+  text-align: center;
 
   .portfolio-page-home-link {
     padding-top: 40px;
@@ -242,6 +240,10 @@ footer {
     font-size: 72px;
     position: absolute;
     bottom: -36px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+
   }
 
   .portfolio-page-text-container {
@@ -271,6 +273,7 @@ footer {
     max-width: 650px;
     margin: 36px auto auto;
     font-size: 18px;
+    text-align: center;
   }
 
   .portfolio-page-img-container {
@@ -284,7 +287,6 @@ footer {
     font-size: 32px;
     font-weight: 800;
     font-family: @font-family-serif;
-    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -298,11 +300,6 @@ footer {
     text-align: center;
     @media (max-width: @screen-md-min) {
       padding: 0 15px;
-    }
-    .portfolio-page-header {
-        font-size: 2.2em;
-        font-weight: 800;
-        color: @gray;
     }
     .portfolio-page-subhead {
       font-size: 1.3em;
