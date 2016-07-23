@@ -6514,7 +6514,6 @@ button.close {
 }
 body {
   min-height: 100%;
-  padding: 0 20px 0 20px;
   line-height: 1.4;
   font-family: Alegreya, "Times New Roman", Times, serif;
 }
@@ -6701,7 +6700,6 @@ footer .footer-container .footer-note {
 .portfolio-page-hero {
   height: 250px;
   background-color: #617E96;
-  margin-top: 20px;
   text-align: center;
 }
 .portfolio-page-hero .portfolio-page-text-container {
@@ -6852,7 +6850,7 @@ footer .footer-container .footer-note {
 }
 .portfolio-page-nav .portfolio-page-nav-next {
   right: 0px;
-  border-right: 20px solid #555555;
+  border-right: 15px solid #555555;
 }
 @media (max-width: 992px) {
   .portfolio-page-nav .portfolio-page-nav-next {
@@ -6873,7 +6871,7 @@ footer .footer-container .footer-note {
 }
 .portfolio-page-nav .portfolio-page-nav-prev {
   left: 0px;
-  border-left: 20px solid #555555;
+  border-left: 15px solid #555555;
 }
 @media (max-width: 992px) {
   .portfolio-page-nav .portfolio-page-nav-prev {
