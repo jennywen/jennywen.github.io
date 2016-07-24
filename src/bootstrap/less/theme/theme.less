@@ -93,7 +93,7 @@ h3 {
 
 .bio-container {
   @media (max-width: @screen-xs-max)  {
-    padding: 0;
+    padding: 15px;
   }
   @media (min-width: @screen-md-min) {
     width: 500px
@@ -154,11 +154,15 @@ h3 {
 }
 
 footer {
-  padding: 20px 0 80px 0;
+  padding: 20px 15px 80px 15px;
   font-size: 16px;
-  margin: 40px -20px 0 -20px;
+  margin: 40px 0 0;
   background-color: #000;
   color: #fff;
+
+  @media (max-width: @screen-xs-max)  {
+    text-align: center;
+  }
 
   .footer-container {
     max-width: 615px;
@@ -173,16 +177,42 @@ footer {
       }
     }
 
+    .footer-heading {
+      float: left;
+      @media (max-width: @screen-sm-max)  {
+        display: inline-block;
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .footer-portrait-container {
+      float: left;
+      @media (max-width: @screen-sm-max)  {
+        display: inline-block;
+        float: none;
+      }
+    }
+
     .img-circle {
       width: 100px;
       height: 100px;
       margin-right: 20px;
       margin-top: 20px;
+      @media (max-width: @screen-sm-max)  {
+        display: inline-block;
+      }
     }
 
     p {
       max-width: 490px;
       width: auto;
+      float: left;
+      @media (max-width: @screen-sm-max)  {
+        margin: auto;
+        width: 100%;
+        float: none;
+      }
     }
 
     .footer-note {
@@ -226,6 +256,12 @@ footer {
         max-width: 1400px;
         &:hover {
           transform: scale(1.01);
+        }
+        @media (max-width: @screen-xs-max)  {
+          height: 300px;
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
       .portfolio-item-caption {
