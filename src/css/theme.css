@@ -6745,7 +6745,13 @@ footer .footer-container .footer-note {
 .portfolio-page-hero {
   height: 250px;
   background-color: #617E96;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
+}
+.portfolio-page-hero .portfolio-page-hero-image {
+  height: 250px;
 }
 .portfolio-page-hero .portfolio-page-text-container {
   width: auto;
@@ -6771,6 +6777,7 @@ footer .footer-container .footer-note {
   position: absolute;
   bottom: -36px;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, 0);
   text-align: center;
 }
@@ -6785,10 +6792,27 @@ footer .footer-container .footer-note {
     margin-right: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .portfolio-page-text-container {
     padding: 0 15px;
   }
+}
+.portfolio-page-text-container .portfolio-page-button {
+  border-color: #000;
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 16px 40px;
+  width: 100%;
+}
+.portfolio-page-text-container .portfolio-page-button:hover,
+.portfolio-page-text-container .portfolio-page-button:active {
+  background-color: #FFF;
+  border-color: #04e4a1;
+  color: #04e4a1;
 }
 .portfolio-page-container {
   padding: 0 0 100px 0;
