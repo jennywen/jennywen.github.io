@@ -6523,6 +6523,24 @@ body {
     margin-bottom: 0;
   }
 }
+.font-shopify-color {
+  color: #dd68f4;
+}
+.font-votepad-color {
+  color: #f25d6e;
+}
+.font-htn-color {
+  color: #28cbfc;
+}
+.background-shopify-color {
+  background-color: #dd68f4;
+}
+.background-votepad-color {
+  background-color: #f25d6e;
+}
+.background-htn-color {
+  background-color: #28cbfc;
+}
 .body-container {
   padding-bottom: 100px;
 }
@@ -6742,9 +6760,31 @@ footer .footer-container .footer-note {
 .portfolio-container .portfolio-row .portfolio-item .portfolio-item-caption .font-regular {
   color: #fff;
 }
+.portfolio-page-scroll-header {
+  padding: 15px 40px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: height 0.2s;
+}
+.portfolio-page-scroll-header a {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #FFF;
+  font-weight: 800;
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+.portfolio-page-scroll-header .portfolio-page-scroll-header-description {
+  font-weight: 400;
+  margin-left: 20px;
+}
 .portfolio-page-hero {
   height: 250px;
-  background-color: #617E96;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -6784,6 +6824,19 @@ footer .footer-container .footer-note {
 .portfolio-page-hero .portfolio-page-text-container {
   position: relative;
   height: 100%;
+}
+.portfolio-page-section-header-container {
+  color: #FFF;
+  padding: 40px 0;
+}
+.portfolio-page-section-header-container .portfolio-page-section-header {
+  margin-bottom: 10px;
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
 }
 @media (min-width: 992px) {
   .portfolio-page-text-container {
@@ -6834,17 +6887,35 @@ footer .footer-container .footer-note {
     width: 800px;
   }
 }
+.portfolio-page-section-superheader {
+  font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 1.0;
+  opacity: 0.7;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .portfolio-page-section-superheader {
+    font-size: 60px;
+  }
+}
 .portfolio-page-section-header {
   font-size: 32px;
   font-weight: 800;
   font-family: Alegreya, "Times New Roman", Times, serif;
   margin-bottom: 20px;
+  color: #000;
+  position: relative;
+  z-index: 3;
 }
 .portfolio-page-section-separator {
   height: 20px;
 }
 .portfolio-page-title {
-  height: 60px;
+  height: 100px;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -6879,6 +6950,7 @@ footer .footer-container .footer-note {
   font-size: 18px;
   margin: 20px auto;
   line-height: 1.8em;
+  color: #777777;
 }
 .portfolio-page-description a,
 .portfolio-page-description a:hover,
