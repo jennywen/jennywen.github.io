@@ -6595,11 +6595,12 @@ h3 {
   line-height: 87px;
   margin-bottom: 10px;
   text-transform: lowercase;
-  -webkit-animation-duration: 0.8s;
-  -moz-animation-duration: 0.8s;
-  -ms-animation-duration: 0.8s;
-  -o-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .bio-container .bio-description {
   font-size: 18px;
@@ -6611,13 +6612,15 @@ h3 {
   -ms-animation-duration: 0.7s;
   -o-animation-duration: 0.7s;
   animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .bio-container .bio-link-container {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -ms-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .bio-container .bio-link-container .bio-link {
   font-size: 0.9em;
@@ -6710,6 +6713,7 @@ footer .footer-container .footer-note {
   -ms-animation-duration: 1.1s;
   -o-animation-duration: 1.1s;
   animation-duration: 1.1s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 @media (min-width: 767px) {
   .portfolio-container .portfolio-row .portfolio-col {
@@ -6726,21 +6730,30 @@ footer .footer-container .footer-note {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
+  transform: translateZ(0);
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
   margin-bottom: 10px;
 }
-.portfolio-container .portfolio-row .portfolio-item .portfolio-img {
-  max-width: 1400px;
-}
-.portfolio-container .portfolio-row .portfolio-item .portfolio-img:hover {
+.portfolio-container .portfolio-row .portfolio-item:hover,
+.portfolio-container .portfolio-row .portfolio-item:focus,
+.portfolio-container .portfolio-row .portfolio-item:active {
   transform: scale(1.01);
 }
-@media (max-width: 767px) {
-  .portfolio-container .portfolio-row .portfolio-item .portfolio-img {
-    height: 300px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.portfolio-container .portfolio-row .portfolio-item:hover .portfolio-item-hover-effect,
+.portfolio-container .portfolio-row .portfolio-item:focus .portfolio-item-hover-effect,
+.portfolio-container .portfolio-row .portfolio-item:active .portfolio-item-hover-effect {
+  opacity: 0.2;
+}
+.portfolio-container .portfolio-row .portfolio-item .portfolio-item-hover-effect {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  -moz-transition: opacity 0.2s cubic-bezier(0.12, -0.15, 0.46, 1.63);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.12, -0.15, 0.46, 1.63);
 }
 .portfolio-container .portfolio-row .portfolio-item .portfolio-item-caption {
   text-align: left;
@@ -6766,7 +6779,7 @@ footer .footer-container .footer-note {
   font-size: 48px;
   font-weight: 800;
   text-transform: lowercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.01em;
 }
 .portfolio-page-scroll-header {
   padding: 15px 40px;
@@ -6797,6 +6810,16 @@ footer .footer-container .footer-note {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -ms-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .portfolio-page-hero .portfolio-page-hero-image {
   height: 250px;
@@ -6810,6 +6833,16 @@ footer .footer-container .footer-note {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Europa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .portfolio-page-hero .portfolio-page-home-link a {
   margin-top: 40px;
@@ -6824,10 +6857,19 @@ footer .footer-container .footer-note {
   font-size: 72px;
   position: absolute;
   bottom: -36px;
-  left: 50%;
+  letter-spacing: 0.01em;
   width: 100%;
-  transform: translate(-50%, 0);
   text-align: center;
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  -ms-animation-duration: 0.6s;
+  -o-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .portfolio-page-hero .portfolio-page-text-container {
   position: relative;
@@ -6845,6 +6887,18 @@ footer .footer-container .footer-note {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 1.5px;
+}
+.portfolio-page-content-container {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 @media (min-width: 992px) {
   .portfolio-page-text-container {
@@ -6883,6 +6937,16 @@ footer .footer-container .footer-note {
   margin: 36px auto auto;
   font-size: 18px;
   text-align: center;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .portfolio-page-img-outer-container {
   width: 100%;
@@ -6900,7 +6964,8 @@ footer .footer-container .footer-note {
   text-transform: lowercase;
   font-size: 100px;
   font-weight: 800;
-  line-height: 1.0;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
   opacity: 0.7;
   position: relative;
   z-index: 1;
@@ -7069,7 +7134,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    -webkit-transition-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
+    -webkit-animation-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
   }
   100% {
     opacity: 1;
@@ -7080,7 +7145,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
-    -moz-transition-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
+    -moz-animation-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
   }
   100% {
     opacity: 1;
@@ -7102,7 +7167,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     transform: translateY(20px);
-    transition-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
+    animation-timing-function: cubic-bezier(0.12, -0.15, 0.46, 1.63);
   }
   100% {
     opacity: 1;
@@ -7119,7 +7184,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
-    -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   100% {
     opacity: 1;
@@ -7130,7 +7195,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
-    -moz-transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -moz-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   100% {
     opacity: 1;
@@ -7141,7 +7206,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     -o-transform: translateY(-20px);
-    -o-transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -o-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   100% {
     opacity: 1;
@@ -7152,7 +7217,7 @@ footer .footer-container .footer-note {
   0% {
     opacity: 0;
     transform: translateY(-20px);
-    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   100% {
     opacity: 1;
@@ -7164,69 +7229,5 @@ footer .footer-container .footer-note {
   -moz-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
-}
-@-moz-keyframes bounceOutRight {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-5px);
-  }
-}
-@-webkit-keyframes bounceOutRight {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-5px);
-  }
-}
-@-o-keyframes bounceOutRight {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-5px);
-  }
-}
-@keyframes bounceOutLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
-}
-@-moz-keyframes bounceOutLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
-}
-@-webkit-keyframes bounceOutLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
-}
-@-o-keyframes bounceOutLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
-}
-@keyframes bounceOutLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
 }
 /*# sourceMappingURL=theme.css.map */
