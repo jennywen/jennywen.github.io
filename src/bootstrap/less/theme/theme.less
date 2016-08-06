@@ -54,6 +54,7 @@
 @color-shopify: #DD68F4;
 @color-votepad: #F25D6E;
 @color-htn: #28CBFC;
+@color-coursera: #4285f4;
 @heading-letter-spacing: 0.01em;
 
 body {
@@ -79,6 +80,10 @@ body {
   color: @color-htn;
 }
 
+.font-coursera-color {
+  color: @color-coursera;
+}
+
 .background-shopify-color {
   background-color: @color-shopify;
 }
@@ -89,6 +94,10 @@ body {
 
 .background-htn-color {
   background-color: @color-htn;
+}
+
+.background-coursera-color {
+  background-color: @color-coursera;
 }
 
 .body-container {
@@ -140,7 +149,7 @@ h3 {
 
   }
   .bio-name {
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 800;
     line-height: 87px;
     margin-bottom: 10px;
@@ -159,6 +168,7 @@ h3 {
     font-weight: 200;
     margin-bottom: 40px;
     line-height: 26px;
+    color: @gray-light;
     -webkit-animation-duration: 0.7s;
     -moz-animation-duration: 0.7s;
     -ms-animation-duration: 0.7s;
@@ -182,6 +192,14 @@ h3 {
       letter-spacing: 1px;
       text-transform: uppercase;
       line-height: 1.8;
+
+      a {
+        color: #000;
+        &:hover,
+        &:active {
+          color: @brand-primary;
+        }
+      }
     }
   }
 }
@@ -560,7 +578,7 @@ footer {
 .portfolio-page-section-superheader {
   font-family: @font-family-sans-serif;
   text-transform: lowercase;
-  font-size: 100px;
+  font-size: 88px;
   font-weight: 800;
   line-height: 0.9;
   letter-spacing: @heading-letter-spacing;
@@ -583,7 +601,7 @@ footer {
 }
 
 .portfolio-page-section-separator {
-  height: 20px;
+  height: 40px;
 }
 
 
@@ -620,7 +638,7 @@ footer {
 
 .portfolio-page-description {
   font-weight: 200;
-  font-size: 18px;
+  font-size: 20px;
   margin: 20px auto;
   line-height: 1.8em;
   color: @gray-light;
