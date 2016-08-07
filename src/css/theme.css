@@ -6686,7 +6686,6 @@ footer .footer-container .footer-portrait-container {
 }
 @media (max-width: 991px) {
   footer .footer-container .footer-portrait-container {
-    display: inline-block;
     float: none;
   }
 }
