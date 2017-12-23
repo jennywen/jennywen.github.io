@@ -24,3 +24,66 @@
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
+
+.h6 {
+  height: 20rem;
+}
+
+.bg-light-purple {
+  animation: colorchange infinite 25s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange infinite 25s; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background-color: #7785FF;}
+  50%  {background-color: #A877FF;}
+  100% {background-color: #7785FF;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background-color: #7785FF;}
+  50%  {background-color: #A877FF;}
+  100% {background-color: #7785FF;}
+}
+
+.slide-down {
+  animation: slidedown 0.2s;
+  -webkit-animtion: slidedown 0.2s;
+  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  -webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+}
+
+@keyframes slidedown
+{
+  0%  {
+    opacity: 0;
+    transform: translateY(-50%)
+  }
+  100% {
+    opacity: 1
+    transform: translateY(0)
+  }
+}
+
+
+.slide-up {
+  animation: slideup 0.2s;
+  -webkit-animtion: slideup 0.2s;
+  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  -webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+}
+
+@keyframes slideup
+{
+  0%  {
+    opacity: 0;
+    transform: translateY(50%)
+  }
+  100% {
+    opacity: 1
+    transform: translateY(0)
+  }
+}
