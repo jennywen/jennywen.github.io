@@ -50,17 +50,17 @@
 }
 
 .slide-down {
-  animation: slidedown 0.2s;
-  -webkit-animtion: slidedown 0.2s;
-  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
-  -webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  animation: slidedown 0.6s;
+  -webkit-animtion: slidedown 0.6s;
+  animation-timing-function: spring(1 200 10 5);
+  -webkit-animation-timing-function: spring(1 200 10 5);
 }
 
 @keyframes slidedown
 {
   0%  {
-    opacity: 0;
-    transform: translateY(-50%)
+    opacity: 0.2;
+    transform: translateY(-20%)
   }
   100% {
     opacity: 1;
@@ -70,17 +70,17 @@
 
 
 .slide-up {
-  animation: slideup 0.2s;
-  -webkit-animtion: slideup 0.2s;
-  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
-  -webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  animation: slideup 0.7s;
+  -webkit-animtion: slideup 0.7s;
+  animation-timing-function: spring(1 200 10 5);
+  -webkit-animation-timing-function: spring(1 200 10 5);
 }
 
 @keyframes slideup
 {
   0%  {
-    opacity: 0;
-    transform: translateY(50%)
+    opacity: 0.2;
+    transform: translateY(20%)
   }
   100% {
     opacity: 1
