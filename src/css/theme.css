@@ -86,19 +86,24 @@ nav {
   -webkit-animation-delay: 0.2s;
 }
 
-.name.slide-up {
+.a1.slide-up {
   animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
 
-.intro.slide-up {
+.a2.slide-up {
   animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
 }
 
-.work.slide-up {
+.a3.slide-up {
   animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
+}
+
+.a4.slide-up {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
 }
 
 .resume {
