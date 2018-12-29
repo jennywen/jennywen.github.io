@@ -41,15 +41,17 @@
   font-size: 4rem;
 } */
 
+.portfolio-image:hover {
+  opacity: 0.9;
+}
+
 .h6 {
   height: 20rem;
 }
 
 .slide-down {
-  animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation: slidedown 0.8s;
-  -webkit-animtion: slidedown 0.8s;
+  animation: slidedown 0.6s;
+  -webkit-animtion: slidedown 0.6s;
   animation-timing-function: spring(1 200 10 5);
   -webkit-animation-timing-function: spring(1 200 10 5);
 }
@@ -57,21 +59,12 @@
 @keyframes slidedown
 {
   0%  {
-<<<<<<< HEAD
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-=======
     opacity: 0.2;
     transform: translateY(60px);
   }
   100% {
     opacity: 1;
     transform: none;
->>>>>>> fcb81dd7ad9ce6bb7a3e2bbadd226679a766d7c0
   }
 }
 
@@ -79,61 +72,23 @@
 
 
 .slide-up {
-<<<<<<< HEAD
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-  animation: slideup 0.7s;
-  -webkit-animtion: slideup 0.7s;
-=======
   animation: fadeInUp 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animtion: slideup 0.8s;
->>>>>>> fcb81dd7ad9ce6bb7a3e2bbadd226679a766d7c0
   animation-timing-function: spring(1 200 10 5);
   -webkit-animation-timing-function: spring(1 200 10 5);
 }
 
-<<<<<<< HEAD
-.slide-up-later {
-  animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation: slideuplater 0.7s;
-  -webkit-animtion: slideuplater 0.7s;
-=======
 .fade-in {
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
->>>>>>> fcb81dd7ad9ce6bb7a3e2bbadd226679a766d7c0
   animation-timing-function: spring(1 200 10 5);
   -webkit-animation-timing-function: spring(1 200 10 5);
 }
 
-<<<<<<< HEAD
-@keyframes slideup
-{
-  0%  {
-    opacity: 0.2;
-    transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideuplater
-{
-  0%  {
-    opacity: 0.2;
-    transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-=======
 
 nav {
   animation-delay: 0.2s;
@@ -183,7 +138,6 @@ nav {
   100% {
     opacity: 1;
     transform: none;
->>>>>>> fcb81dd7ad9ce6bb7a3e2bbadd226679a766d7c0
   }
 
 }
