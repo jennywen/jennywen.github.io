@@ -18,7 +18,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body class="bg-gray black sans-serif">
-    <section class="center w-50">
+    <section class="center w-50-l w-100-ns ph4 ph0-l">
       <nav class="mt5 fade-in cf">
         <div class="fl w-25">
           <a href="index.html" class="black link hover-blue">Jenny Wen</a>
@@ -51,34 +51,20 @@
       </header>
     </section>
     <div class="a4 slide-up">
-      <section class="center w-100 ph5 mv5">
+      <section class="center w-100 ph5-l ph3-m ph0 mv5">
         <img src="assets/img/shipping/header.png" />
       </section>
-      <section class="center w-50 cf">
-          <!-- <section class="w-third fl pr4 lh-copy">
-            <div class="mb4">
-              <div>Contribution</div>
-              <p>Wireframing, prototyping, copywriting</p>
-            </div>
-            <div class="mv4">
-              <div>Team</div>
-              <p>Design mentor, product manager, engineer </p>
-            </div>
-          </section> -->
-            <section class="w-two-thirds fl">
-              <div class="mb2">Team mandate</div>
-              <div class="serif f2 lh-solid">Enabling merchants to ship products to their customers</div>
-              <div class="lh-copy mt3 f5">
-                <p>As a team, our mandate was simple: do whatever we can as a company to make it easier for merchants to get their products to their end customers. We were doing that by reducing the reliance on third-party applications for our merchants' shipping needs. We'd started by selling shipping labels on our platform, but over time, we'd liked to absorb as much of that process into Shopify as possible—from organizing shipments, all the way to packing boxes.</p>
+      <section class="center w-50-l w-100-ns ph4 ph0-l cf">
+        <section class="w-two-thirds-m w-100-m w-100 fl">
+          <div class="mb2">Team mandate</div>
+          <div class="serif f2 lh-solid">Enabling merchants to ship products to their customers</div>
+          <div class="lh-copy mt3 f5">
+            <p>As a team, our mandate was simple: do whatever we can as a company to make it easier for merchants to get their products to their end customers. We were doing that by reducing the reliance on third-party applications for our merchants' shipping needs. We'd started by selling shipping labels on our platform, but over time, we'd liked to absorb as much of that process into Shopify as possible—from organizing shipments, all the way to packing boxes.</p>
           </section>
-        </section>
-          <section class="center w-60 cf">
-            <div class="mv3">
-              <img src="assets/img/shipping/shipping_onboarding.png" />
-            </div>
-          </section>
-          <section class="center w-50 cf">
-          <section class="w-two-thirds fl">
+          <div class="mv3">
+            <img src="assets/img/shipping/shipping_onboarding.png" />
+          </div>
+          <section class="w-two-thirds-m w-100 fl">
             <section class="mv5">
               <div class="mb2">Success metrics</div>
               <div class="serif f2 lh-solid">Matching our team goals with merchants' goals</div>
@@ -97,92 +83,77 @@
               </div>
             </section>
           </section>
-
+          <div class="image mv3">
+            <img src="assets/img/shipping/workflow_old.png" />
+          </div>
+          <section class="w-two-thirds-m w-100 fl lh-copy mv3">
+            <p>We'd gotten some feedback from new merchants that they weren't too clear on how a shipping zone and shipping rate were related based on the back-and-forth of this flow, so we thought to simplify the flow by embedding shipping rates within a shipping zone.</p>
+          </section>
+          <section class="mt3 mb5">
+            <div class="image">
+              <img src="assets/img/shipping/workflow_new.png" />
+           </div>
+          </section>
+          <section class="w-two-thirds-m w-100 fl lh-copy">
+            <div class="mb2">When existing patterns fail</div>
+            <div class="serif f2 lh-solid">Shipping didn't translate well to mobile
+      web</div>
+            <p>With the new shipping zone workflow, we were able to quickly mock something up with existing components and patterns in the Shopify Design System.</p>
+          </section>
+          <section class="mv3">
+            <img src="assets/img/shipping/desktop_premobile_clean.png" />
+          </section>
+          <section class="w-two-thirds-m w-100 fl lh-copy">
+            <p>It seemed to work well, and more people understood the relationship between shipping rates and shipping zones. However, as we began to explore it on mobile web, we found that the responsive shrink-and-stack strategy we were using for mobile web made this section complicated to use on mobile.</p>
+          </section>
+          <section class="mt5 mb3">
+            <section class="w-two-thirds-m w-100 fl lh-copy">
+              <div class="mb2">Pattern explorations</div>
+              <div class="serif f2 lh-solid">Rethinking mobile form patterns</div>
+              <p>
+              Based on the faults of our existing mobile-web strategy, we started exploring ways in which we might have designed Shipping settings if it were optimized for an experience on mobile web. I built a prototype using a layered approach to explore a way in which we could break up each section of the settings, and each form field into a separate screen.
+            </p>
+            </section>
+          </section>
+          <section class="mb3">
+            <div class="image">
+              <img src="assets/img/shipping/first_proto_flow.png" />
+            </div>
+          </section>
+          <section class="cf center">
+            <section class="w-two-thirds-m w-100 fl lh-copy">
+            <p>Heuristically, the number of layers felt overwhelming to someone who might have gone in wanting to adjust just one shipping rate. So, we aggregated related form fields into sections, and created a pattern of having read-only settings, where only constructive and destructive actions were placed in a separate layer.</p>
+            </section>
+          </section>
+          <section class="cf center mt3">
+            <div class="image">
+              <img src="assets/img/shipping/second_proto_flow.png" />
+           </div>
+          </section>
+          <section class="w-two-thirds-m w-100 fl lh-copy mt5">
+            <div class="mb2">Back to desktop</div>
+            <div class="serif f2 lh-solid">Creating complementary design patterns</div>
+            <p>To bring the exploration back full-circle, we proposed that the corresponding desktop system would follow the same sheet transitions to provide a consistent experience.</p>
+          </section>
+          <section class="mb5">
+            <div class="mv3">
+              <img src="assets/img/shipping/desktop_1.png" />
+            </div>
+            <div class="mv3">
+              <img src="assets/img/shipping/desktop_2.png" />
+            </div>
+            <div class="mv3">
+              <img src="assets/img/shipping/desktop_3.png" />
+            </div>
+          </section>
+          <section class="w-two-thirds-m w-100 fl mv5 lh-copy">
+            <div class="mb2">Big picture</div>
+            <div class="serif f2 lh-solid">Designing for design systems</div>
+            <p>Since the Shipping section of our platform's settings were amongst the more complicated, we proposed similar patterns for the existing sections of our settings, and using similar constructive and destructive sheets for other parts of our platform like creating and editing products or customer profiles.</p>
+          </section>
         </section>
-      </section>
-    </section>
-    <section class="w-60 cf center mv3">
-      <div class="image">
-        <img src="assets/img/shipping/workflow_old.png" />
-     </div>
-    </section>
-    <section class="w-50 cf center mv3">
-      <section class="w-two-thirds fl lh-copy">
-        <p>We'd gotten some feedback from new merchants that they weren't too clear on how a shipping zone and shipping rate were related based on the back-and-forth of this flow, so we thought to simplify the flow by embedding shipping rates within a shipping zone.</p>
-      </section>
-    </section>
-    <section class="w-60 cf center mt3 mb5">
-      <div class="image">
-        <img src="assets/img/shipping/workflow_new.png" />
-     </div>
-    </section>
-      <section class="w-50 cf center">
-        <section class="w-two-thirds fl lh-copy">
-          <div class="mb2">When existing patterns fail</div>
-          <div class="serif f2 lh-solid">Shipping didn't translate well to mobile
-    web</div>
-          <p>With the new shipping zone workflow, we were able to quickly mock something up with existing components and patterns in the Shopify Design System.</p>
-        </section>
-      </section>
-      <section class="w-60 cf center mv3">
-        <img src="assets/img/shipping/desktop_premobile_clean.png" />
-      </section>
-      <section class="w-50 cf center">
-        <section class="w-two-thirds fl lh-copy">
-          <p>It seemed to work well, and more people understood the relationship between shipping rates and shipping zones. However, as we began to explore it on mobile web, we found that the responsive shrink-and-stack strategy we were using for mobile web made this section complicated to use on mobile.</p>
-        </section>
-      </section>
-      <section class="w-50 cf center mt5 mb3">
-        <section class="w-two-thirds fl lh-copy">
-          <div class="mb2">Pattern explorations</div>
-          <div class="serif f2 lh-solid">Rethinking mobile form patterns</div>
-          <p>
-          Based on the faults of our existing mobile-web strategy, we started exploring ways in which we might have designed Shipping settings if it were optimized for an experience on mobile web. I built a prototype using a layered approach to explore a way in which we could break up each section of the settings, and each form field into a separate screen.
-        </p>
-        </section>
-      </section>
-      <section class="w-60 cf center mb3">
-        <div class="image">
-          <img src="assets/img/shipping/first_proto_flow.png" />
-        </div>
-      </section>
-      <section class="w-50 cf center">
-        <section class="w-two-thirds fl lh-copy">
-        <p>Heuristically, the number of layers felt overwhelming to someone who might have gone in wanting to adjust just one shipping rate. So, we aggregated related form fields into sections, and created a pattern of having read-only settings, where only constructive and destructive actions were placed in a separate layer.</p>
-        </section>
-      </section>
-    <section class="w-60 cf center mt3">
-      <div class="image">
-        <img src="assets/img/shipping/second_proto_flow.png" />
-     </div>
-    </section>
-    <section class="w-50 cf center mt5">
-      <section class="w-two-thirds fl lh-copy">
-        <div class="mb2">Back to desktop</div>
-        <div class="serif f2 lh-solid">Creating complementary design patterns</div>
-        <p>To bring the exploration back full-circle, we proposed that the corresponding desktop system would follow the same sheet transitions to provide a consistent experience.</p>
-      </section>
-    </section>
-    <section class="w-60 cf center mb5">
-      <div class="mv3">
-        <img src="assets/img/shipping/desktop_1.png" />
-      </div>
-      <div class="mv3">
-        <img src="assets/img/shipping/desktop_2.png" />
-      </div>
-      <div class="mv3">
-        <img src="assets/img/shipping/desktop_3.png" />
-      </div>
-    </section>
-    <section class="w-50 cf center mv5">
-      <section class="w-two-thirds fl lh-copy">
-        <div class="mb2">Big picture</div>
-        <div class="serif f2 lh-solid">Designing for design systems</div>
-        <p>Since the Shipping section of our platform's settings were amongst the more complicated, we proposed similar patterns for the existing sections of our settings, and using similar constructive and destructive sheets for other parts of our platform like creating and editing products or customer profiles.</p>
-      </section>
-    </section>
   </div>
-  <footer class="w-50 center mt7 mb5 fade-in">
+  <footer class="w-50-l w-100 center mt7 mb5 fade-in ph0-l ph4">
     <a href="http://dribbble.com/jennywen" class="black hover-blue link mr3" target="_blank">Dribbble</a>
     <a href="http:///twitter.com/jenny_wen" class="black hover-blue link mr3" target="_blank">Twitter</a>
     <a href="http://instagram.com/jenny_wen_" class="black hover-blue link mr3" target="_blank">Instagram</a>
