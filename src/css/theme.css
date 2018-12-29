@@ -1,48 +1,48 @@
+:root {
+  --gray: #EFEFEF;
+  --blue: #0000FF;
+}
+
+@font-face {
+    font-family: 'Berlingske Serif';
+    /* src: url("../../assets/fonts/BerlingskeSerifText-Bd.eot"); */
+    /* src: url("../../assets/fonts/BerlingskeSerifText-Bd.eot?#iefix") format("embedded-opentype"), */
+         /* url("../../assets/fonts/BerlingskeSerifText-Bd.woff") format("woff"), */
+    src: url("../../assets/fonts/BerlingskeSerif-Blk.otf") format("opentype"),
+         url("../../assets/fonts/BerlingskeSerif-Blk.ttf") format("truetype")
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.hover-blue:hover {
+  color: var(--blue);
+}
+
+.hover-blue:active {
+  color: var(--blue);
+}
+
+.f2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.03rem;
+}
+
 .serif {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Berlingske Serif', serif;
 }
 
 .sans-serif {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.bg-light-purple {
-  background-color: #7785FF;
-}
-
-.lh-copy {
-  letter-spacing: 0.2px;
-}
-
-.blended {
-  background-image: url("../../assets/img/portrait.png");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-}
+/* .f-subheadline{
+  font-size: 4rem;
+} */
 
 .h6 {
   height: 20rem;
-}
-
-.bg-light-purple {
-  animation: colorchange infinite 25s; /* animation-name followed by duration in seconds*/
-     /* you could also use milliseconds (ms) or something like 2.5s */
-  -webkit-animation: colorchange infinite 25s; /* Chrome and Safari */
-}
-
-@keyframes colorchange
-{
-  0%   {background-color: #7785FF;}
-  50%  {background-color: #A877FF;}
-  100% {background-color: #7785FF;}
-}
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{
-  0%   {background-color: #7785FF;}
-  50%  {background-color: #A877FF;}
-  100% {background-color: #7785FF;}
 }
 
 .slide-down {
@@ -56,30 +56,84 @@
 {
   0%  {
     opacity: 0.2;
-    transform: translateY(-20%)
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0)
+    transform: none;
   }
 }
 
 
+
+
 .slide-up {
-  animation: slideup 0.7s;
-  -webkit-animtion: slideup 0.7s;
+  animation: fadeInUp 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animtion: slideup 0.8s;
   animation-timing-function: spring(1 200 10 5);
   -webkit-animation-timing-function: spring(1 200 10 5);
 }
 
-@keyframes slideup
+.fade-in {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-timing-function: spring(1 200 10 5);
+  -webkit-animation-timing-function: spring(1 200 10 5);
+}
+
+
+nav {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+.a1.slide-up {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+.a2.slide-up {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.a3.slide-up {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+.a4.slide-up {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+.resume {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes fadeInUp
 {
   0%  {
-    opacity: 0.2;
-    transform: translateY(20%)
+    opacity: 0;
+    transform: translateY(60px);
   }
   100% {
-    opacity: 1
-    transform: translateY(0)
+    opacity: 1;
+    transform: none;
   }
+
 }
