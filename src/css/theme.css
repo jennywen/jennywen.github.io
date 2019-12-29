@@ -12,6 +12,17 @@
          url("../../assets/fonts/BerlingskeSerif-Blk.ttf") format("truetype")
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
 .bg-gray {
   background-color: var(--gray);
 }
@@ -68,7 +79,17 @@
   }
 }
 
+.masonry { /* Masonry container */
+  column-count: 3;
+  /* column-gap: 1em; */
+  position: relative;
+}
 
+.item { /* Masonry bricks or child elements */
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
 
 
 .slide-up {
