@@ -5,11 +5,26 @@
 
 @font-face {
     font-family: 'Berlingske Serif';
+    font-weight:800;
     /* src: url("../../assets/fonts/BerlingskeSerifText-Bd.eot"); */
     /* src: url("../../assets/fonts/BerlingskeSerifText-Bd.eot?#iefix") format("embedded-opentype"), */
          /* url("../../assets/fonts/BerlingskeSerifText-Bd.woff") format("woff"), */
     src: url("../../assets/fonts/BerlingskeSerif-Blk.otf") format("opentype"),
          url("../../assets/fonts/BerlingskeSerif-Blk.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: 'Berlingske Serif';
+  font-weight: 600;
+  src: url("../../assets/fonts/BerlingskeSerif-Bd.otf") format("opentype"),
+       url("../../assets/fonts/BerlingskeSerif-Bd.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: 'Berlingske Serif';
+  font-weight: 400;
+  src: url("../../assets/fonts/BerlingskeSerif-Rg.otf") format("opentype"),
+       url("../../assets/fonts/BerlingskeSerif-Rg.ttf") format("truetype")
 }
 
 html {
@@ -37,7 +52,7 @@ html {
 
 .f2 {
   font-size: 2.5rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: -0.015rem;
 }
 
 .serif {
@@ -54,6 +69,10 @@ html {
 
 .portfolio-image:hover {
   opacity: 0.9;
+}
+
+.f1 {
+  font-weight: 800;
 }
 
 .h6 {
