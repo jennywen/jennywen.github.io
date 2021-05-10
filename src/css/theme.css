@@ -20,13 +20,6 @@
        url("../../assets/fonts/BerlingskeSerif-Bd.ttf") format("truetype")
 }
 
-@font-face {
-  font-family: 'Berlingske Serif';
-  font-weight: 400;
-  src: url("../../assets/fonts/BerlingskeSerif-Rg.otf") format("opentype"),
-       url("../../assets/fonts/BerlingskeSerif-Rg.ttf") format("truetype")
-}
-
 html {
   box-sizing: border-box;
 }
@@ -53,6 +46,7 @@ html {
 .f2 {
   font-size: 2.5rem;
   letter-spacing: -0.015rem;
+  font-weight: 600;
 }
 
 .serif {
