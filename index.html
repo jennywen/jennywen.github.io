@@ -1,152 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34350037-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    gtag('config', 'UA-34350037-1');
-    </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌻</text></svg>">
 
-    <title>Jenny Wen</title>
-    <meta name="keywords" content="jenny wen, systems design engineering, san francisco, designer, shopify, coursera, dropbox paper, product design, engineer, urban planning">
-    <meta name="description" content="Hi! I'm Jenny and I'm a designer at Figma.">
-    <meta name="author" content="Jenny Wen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO meta tags -->
+  <meta name="description" content="Jenny Wen - I was most recently Director of Design at Figma, leading products like FigJam, Slides, and Community. I'm good at helping teams be more ambitious together. To imagine novel solutions, to ship higher quality products, and most importantly—to have fun through it all.">
+  <meta name="keywords" content="Jenny Wen, Figma, Product Design, FigJam, Design Leadership, UX Design, Product Management">
+  <meta name="author" content="Jenny Wen">
 
-    <meta property="og:title"              content="Jenny Wen, Product Designer" />
-    <meta property="og:description"        content="Hi! I'm Jenny and I'm a designer at Figma." />
-    <meta property="og:image"              content="http://jennywen.ca/assets/img/portrait.jpg" />
+  <!-- Social media sharing (Open Graph) -->
+  <meta property="og:title" content="Jenny Wen - Designer">
+  <meta property="og:description" content="Jenny Wen - I was most recently Director of Design at Figma, leading products like FigJam, Slides, and Community. I'm good at helping teams be more ambitious together. To imagine novel solutions, to ship higher quality products, and most importantly—to have fun through it all.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://jennywen.ca">
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="src/css/theme.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  </head>
-  <body class="bg-gray black sans-serif">
-    <section class="center w-50-l w-100 ph0-l ph4">
-      <nav class="mt5 mb7 fade-in cf">
-        <div class="fl w-25">
-          <a href="/" class="black link hover-blue">Jenny Wen</a>
-        </div>
-        <div class="fl w-75">
-          <div class="fr ml3">
-            <a class="black link hover-blue" href="about">
-              About
-            </a>
-          </div>
-          <div class="fr ml3">
-            <a class="black link hover-blue" href="books">
-              Books
-            </a>
-          </div>
-          <div class="fr ml3">
-            <a class="black link hover-blue" href="/">
-              Portfolio
-            </a>
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jenny Wen - Designer">
+  <meta name="twitter:description" content="Jenny Wen - I was most recently Director of Design at Figma, leading products like FigJam, Slides, and Community. I'm good at helping teams be more ambitious together. To imagine novel solutions, to ship higher quality products, and most importantly—to have fun through it all.">
+
+  <!-- Additional meta tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.typekit.net/rku4zxn.css">
+  <link href="./dist/output.css" rel="stylesheet">
+  <title>Jenny Wen</title>
+</head>
+<body class="tracking-tight md:px-2 md:py-1 px-0 py-1">
+    <div class="bg-white text-lg">
+    
+      <div class="grid grid-cols-12 px-7">
+
+
+        <div id="feed" class="lg:col-span-7  md:col-span-9 col-span-10 max-w-screen-lg pb-5 leading-relaxed">
+
+          <div class="xl:mr-60 lg:mr-30 md:mr-20 max-w-prose">
+            <h1 class="font-serif font-extrabold md:text-8xl text-7xl mb-6 text-dark tracking-tight">Jenny Wen</h1>
+            <p class="leading-relaxed">I was most recently Director of Design at Figma, where I led the products and teams at the frontier of our business (<a href="http://figma.com/figjam" target="_blank">FigJam</a>, <a href="http://figma.com/slides" target="_blank">Slides</a>, <a href="http://figma.com/community" target="_blank">Community</a>, Growth, and two other top secret products). As a designer, I brought FigJam to market, poured myself into so many little details, and grew it into a tool people love using.</p>
+            <p class="mt-4 leading-relaxed">In lots of parts of my life, I'm a generalist. I'm good at helping teams be more ambitious together. To imagine novel solutions, to ship higher quality products, and most importantly—to have fun through it all.</p>
           </div>
         </div>
-      </nav>
-      <header class="w-two-thirds-l w-80-m w-100">
-        <section class="f-subheadline-l f-subheadline-m f1 lh-solid serif a1 slide-up">
-          I’m Jenny.
-        </section>
-        <section class="lh-copy f5 a2 slide-up">
-          <p>I'm currently the design lead for FigJam at Figma. I've also worked on collaboration features and built out our new grad and intern programs. Before that, I worked on Dropbox Paper, Square for Retail, and Shopify Shipping. I love building tools that people depend on for their work.</p>
-          <p>As a product designer, I'm a generalist. I thrive in ambiguous problem spaces, I get a thrill out of throwing my worst ideas on the table, and I push pixels with a purpose.</p>
-        </section>
-      </header>
-      <section class="w-100 mv5 a3 slide-up">
-        <!-- <div class="mv3 portfolio-image">
-          <a href="embeds.html">
-            <img src="assets/img/templates.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="embeds.html" class="black hover-blue link mr3">
-            Embeds<br />
-            Dropbox Paper, 2017–2018
-          </a>
-        </div> -->
-        <div class="mv3 portfolio-image">
-          <a href="https://www.figma.com/blog/introducing-figjam/">
-            <img src="assets/img/figjam.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="https://www.figma.com/blog/introducing-figjam/" class="black hover-blue link mr3">
-            FigJam<br />
-            Figma, 2021
-          </a>
-        </div>
+        <div class="md:fixed md:right-8 md:top-2 lg:col-span-2 lg:col-start-11 md:col-span-2 md:col-start-12 col-span-12 pt-4 pb-20 transition-opacity">
+          <div id="social-container" class="text-right md:mt-0 mt-6">
+          </div></div>
+      </div>
+      
+  </div>
 
-        <div class="mv3 portfolio-image">
-          <a href="https://www.figma.com/blog/new-ways-to-search-and-provide-context-in-figma/">
-            <img src="assets/img/search.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="https://www.figma.com/blog/new-ways-to-search-and-provide-context-in-figma/" class="black hover-blue link mr3">
-            Unified Search<br />
-            Figma, 2020
-          </a>
-        </div>
-        <div class="mv3 portfolio-image">
-          <a href="https://www.figma.com/blog/introducing-figma-community/">
-            <img src="assets/img/coco.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="https://www.figma.com/blog/introducing-figma-community/" class="black hover-blue link mr3">
-            Community + Collaboration<br />
-            Figma, 2019
-          </a>
-        </div>
-        <div class="mv3 portfolio-image">
-          <a href="templates">
-            <img src="assets/img/templates.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="templates" class="black hover-blue link mr3">
-            Templates<br />
-            Dropbox Paper, 2018
-          </a>
-        </div>
-        <div class="mv3 portfolio-image">
-          <a href="shipping">
-            <img src="assets/img/shipping.png" />
-          </a>
-        </div>
-        <div class="lh-copy mb5 portfolio-link">
-          <a href="shipping" class="black hover-blue link mr3">
-            Shipping settings<br />
-            Shopify, 2015
-          </a>
-      </section>
+  <template id="social">
+    <div id="social-text" class="md:mb-2 md:block inline-block"><a id="social-link" class="no-underline" target="_blank"></a></div>
+  </template>
 
-      <footer class="w-100 center mt7 mb5 fade-in lh-copy">
-        <a href="http:///twitter.com/jenny_wen" class="black hover-blue link mr3" target="_blank">Twitter</a>
-        <a href="http://instagram.com/jenny_wen_" class="black hover-blue link mr3" target="_blank">Instagram</a>
-        <a href="http://goodreads.com/jennywen" class="black hover-blue link mr3" target="_blank">Goodreads</a>
-        <a href="http://dribbble.com/jennywen" class="black hover-blue link mr3" target="_blank">Dribbble</a>
-        <a href="http://linkedin.com/in/jennywen" class="black hover-blue link mr4" target="_blank">LinkedIn</a>
-      </footer>
-    </section>
+  <template id="post">
+    <div class="my-20">
+        <div id="date" class="text-light mb-4"></div>
+      
+        <p class="mb-6 leading-relaxed xl:mr-60 lg:mr-30 max-w-prose md:mr-20"><a id="link"><span id="name" class="tracking-tight text-dark font-medium mb-6"></span></a> — <span id="desc"></span></p>
+        <div id="link-container"></div>
+        <div id="img-container" class="grid grid-cols-12 gap-x-6 mt-10"></div>
+    </div>
+  </template>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- <template id="t-link">
+    <span class="mt-4"><a id="link" class="text-dark no-underline" target="_blank"></a><span class="text-light font-extrabold"> ↗</span></span>
+  </template> -->
 
-      ga('create', 'UA-34350037-1', 'auto');
-      ga('send', 'pageview');
+  <template id="t-img">
+    <img id="image"/>
+  </template>
 
+
+  
+
+  <script src="src/index.js"></script>
+  <script src="dist/bundle.js"></script>
+  
+
+  <div id="scroll-to-top-container"></div>
+
+  <script type="text/babel">
+  const ScrollToTop = () => {
+      const [isExpanded, setIsExpanded] = React.useState(false);
+      const [isHovered, setIsHovered] = React.useState(false);
+      const [isActive, setIsActive] = React.useState(false);
+  
+      // Simpler scroll handler
+      const handleScroll = () => {
+          setIsExpanded(window.scrollY > 200);
+      };
+  
+      React.useEffect(() => {
+          window.addEventListener('scroll', handleScroll);
+          return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+  
+      return (
+          <div
+              style={{
+                  cursor: isExpanded ? 'pointer' : '',
+                  position: 'fixed',
+                  bottom: '28px',
+                  right: '28px',
+                  width: isExpanded ? '48px' : '12px',
+                  height: isExpanded ? '48px' : '12px',
+                  backgroundColor: 'black',
+                  borderRadius: '50%',
+                  zIndex: 9999,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: isActive ? '100ms cubic-bezier(0.4, 0, 0.2, 1)' : 
+                           isExpanded ? '600ms cubic-bezier(0.34, 1.56, 0.64, 1)' : 
+                           '100ms cubic-bezier(0.4, 0, 0.2, 1)',
+                  opacity: isHovered && isExpanded ? 0.9 : 1,
+                  transform: `scale(${isActive ? 0.95 : isHovered ? 1.05 : 1})`
+              }}
+              onClick={() => {
+                  if (!isExpanded) return;
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => {
+                  setIsHovered(false);
+                  setIsActive(false);
+              }}
+              onMouseDown={() => isExpanded && setIsActive(true)}
+              onMouseUp={() => setIsActive(false)}
+          >
+              {isExpanded && (
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="24" 
+                      height="24" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="white"
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                  >
+                      <polyline points="18 15 12 9 6 15"></polyline>
+                  </svg>
+              )}
+          </div>
+      );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById('scroll-to-top-container'));
+  root.render(<ScrollToTop />);
   </script>
-  </body>
+
+  
+</body>
 </html>
+

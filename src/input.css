@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://use.typekit.net/rku4zxn.css");
+
+
+.font-serif {
+    font-family: "swear-text-cilati", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+}
+
+body {
+    color: #000;
+    letter-spacing: -1%;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never;
+}
+
+hr {
+    border-top: 2px solid #D8D6D1;
+}
+
+p, li {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li::before {
+    content: "•";
+    display: inline-block; width: 1rem;
+    margin-left: -1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: red;
+}
+
+img {
+    outline: 1px solid rgba(0,0,0,0.1);
+    outline-offset: -1px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #dcdcdc;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: red;
+
+}
+
+.font-medium {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
