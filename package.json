@@ -3,10 +3,12 @@
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
+    "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
+    "typescript": "5.7.3",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   },
@@ -15,12 +17,20 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/react": "^2.0.18",
     "@heroicons/vue": "^2.0.18",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "lucide-react": "^0.468.0",
+    "next": "14.1.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3"
   },
   "scripts": {
-    "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch"
+    "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "name": "portfolio-2024",
   "version": "1.0.0",
@@ -28,5 +38,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "private": true
 }

@@ -3,7 +3,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/index.js"
+    "./src/index.js",
+    './src/**/*.{js,ts,jsx,tsx}',
   ],  
   theme: {
     extend: {
@@ -21,5 +22,8 @@ module.exports = {
         'md': '6px 6px 0 0 rgba(0,0,0,0.1)'
       }
     },
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

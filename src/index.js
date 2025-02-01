@@ -1,5 +1,3 @@
-
-
 const projects = [
     {
         "date": "November 2024",
@@ -206,14 +204,18 @@ projects.forEach(project => {
     clone.querySelector("#desc").innerHTML = project.desc;
     project.link ? clone.querySelector("#link").href = project.link : null;
 
-    project.img.forEach(img => {
+    project.img.forEach((img, index) => {
         const imgClone = imgTemplate.content.cloneNode(true);
         imgClone.querySelector("#image").src = "./assets/" + img;
 
         if (project.img.length % 2) {
             imgClone.querySelector("#image").classList.add("col-span-12")
         } else {
-            imgClone.querySelector("#image").classList.add("col-span-6");
+            imgClone.querySelector("#image").classList.add("md:col-span-6");
+            imgClone.querySelector("#image").classList.add("md:mb-0");
+            if (index === 0) {
+                imgClone.querySelector("#image").classList.add("mb-6");
+            }
         }
         imgContainer.appendChild(imgClone);
     })
