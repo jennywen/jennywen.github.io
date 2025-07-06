@@ -1,43 +1,27 @@
-import "./globals.css"
-import { Metadata } from "next"
-import { Inter } from "next/font/google"
-import React from "react" // Change from type import to regular import
-
-const inter = Inter({ subsets: ["latin"] })
+import './globals.css'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Your Blog",
-  description: "Your blog description here",
-  keywords: ["web development", "software engineering", "tech books", "projects", "Next.js", "React", "accessibility"],
+  title: 'Jenny Wen',
+  description: 'Portfolio and blog',
+  metadataBase: new URL('https://jennywen.ca'),  // Replace with your actual domain
   openGraph: {
-    title: "My Simple Blog | Web Development and Tech Insights",
-    description:
-      "Explore web development tips, software engineering experiences, tech book reviews, and interesting projects in this comprehensive tech blog.",
-    url: "https://mysimpleblog.com",
-    siteName: "My Simple Blog",
-    locale: "en_US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://jennywen.ca',
+    title: 'Jenny Wen',
+    description: 'Portfolio and blog',
+    siteName: 'Jenny Wen',
   },
   twitter: {
-    title: "My Simple Blog | Web Development and Tech Insights",
-    card: "summary_large_image",
+    card: 'summary_large_image',
+    title: 'Jenny Wen',
+    description: 'Portfolio and blog',
+    creator: '@jenny_wen',
   },
-  verification: {
-    google: "your-google-site-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
+  other: {
+    'typekit': 'rku4zxn'
+  }
 }
 
 export default function RootLayout({
@@ -47,8 +31,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/rku4zxn.css" />
+      </head>
+      <body className="bg-white dark:bg-black">
+        {children}
+      </body>
     </html>
   )
-}
-
+} 
