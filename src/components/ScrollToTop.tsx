@@ -34,8 +34,8 @@ export default function ScrollToTop() {
         right: '28px',
         width: isExpanded ? '48px' : '12px',
         height: isExpanded ? '48px' : '12px',
-        backgroundColor: isDark ? 'black' : 'white',
-        border: isDark ? '1px solid #444' : '1px solid #ddd',
+        backgroundColor: isDark ? 'white' : 'black',
+        border: isDark ? '1px solid #ddd' : '1px solid #444',
         borderRadius: '50%',
         zIndex: 9999,
         display: 'flex',
@@ -66,7 +66,7 @@ export default function ScrollToTop() {
           height="24" 
           viewBox="0 0 24 24" 
           fill="none" 
-          stroke={isDark ? 'white' : 'black'}
+          stroke={isDark ? 'black' : 'white'}
           strokeWidth="2" 
           strokeLinecap="round" 
           strokeLinejoin="round"

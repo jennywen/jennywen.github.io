@@ -88,8 +88,19 @@ a:hover {
     font-style: normal;
 }
 
-
-
+.post-link,
+.post-link * {
+  text-decoration: none !important;
+}
+.post-link .post-title {
+  text-decoration: none !important;
+  border-bottom: 1.5px solid #d1d5db;
+  transition: border-color 0.2s;
+}
+.post-link:hover .post-title {
+  border-bottom: 1.5px solid #ef4444;
+  text-decoration: none !important;
+}
 
 @layer utilities {
   .text-balance {
@@ -235,4 +246,118 @@ a:hover {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hide Substack floating icons */
+.pencraft {
+  display: none !important;
+}
+
+/* Make sure Substack image rows and columns display as flex/grid */
+.image-row, .image-row--2, .image-row--3, .image-row--4 {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.image-row img,
+.image-row--2 img,
+.image-row--3 img,
+.image-row--4 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+/* Make sure figures and images are visible */
+figure, .image-figure, .image-container {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.image-figure img, .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make all figures, pictures, and images in blog content visible and styled */
+.prose figure,
+.prose picture,
+.prose img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.prose figure {
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.prose figcaption {
+  text-align: center;
+  color: #888;
+  font-size: 0.95em;
+  margin-top: 0.5rem;
+}
+
+/* Make Substack gallery images responsive and visually balanced */
+.substack-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+
+.substack-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0 !important;
+  box-shadow: none;
+  background: none;
+  display: block;
+}
+
+/* If there are exactly two images, force two columns */
+.substack-gallery img:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .substack-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 100%;
+  }
+  .substack-gallery img {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Remove borders, box-shadows, and outlines from images in notes pages */
+.prose img,
+.blog img {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
