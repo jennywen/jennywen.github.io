@@ -45,11 +45,11 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   try {
     const postData = await getPostData(params.id)
     return {
-      title: postData.title,
+      title: `Jenny Wen — ${postData.title}`,
       description: (postData as any).description?.toString() || '',
       keywords: (postData as any).keywords?.toString() || '',
       openGraph: {
-        title: postData.title,
+        title: `Jenny Wen — ${postData.title}`,
         description: (postData as any).description?.toString() || '',
         type: "article",
         publishedTime: postData.date,
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
       },
       twitter: {
         card: "summary_large_image",
-        title: postData.title,
+        title: `Jenny Wen — ${postData.title}`,
         description: (postData as any).description?.toString() || '',
       },
     }
@@ -66,10 +66,10 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const substack = await getSubstackPostBySlug(params.id)
     if (substack) {
       return {
-        title: substack.title,
+        title: `Jenny Wen — ${substack.title}`,
         description: substack.description?.toString() || '',
         openGraph: {
-          title: substack.title,
+          title: `Jenny Wen — ${substack.title}`,
           description: substack.description?.toString() || '',
           type: "article",
           publishedTime: substack.date,
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
         },
         twitter: {
           card: "summary_large_image",
-          title: substack.title,
+          title: `Jenny Wen — ${substack.title}`,
           description: substack.description?.toString() || '',
         },
       }

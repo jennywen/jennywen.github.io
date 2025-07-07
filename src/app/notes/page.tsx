@@ -3,6 +3,7 @@ import Parser from 'rss-parser';
 import Link from 'next/link';
 import PageLayout from '@/components/PageLayout';
 import { getSortedPostsData } from '../notes/lib/api';
+import type { Metadata } from 'next';
 
 interface SubstackPost {
   type: 'substack';
@@ -61,6 +62,11 @@ function normalizeNotesPosts(notes: any[]): NotesPost[] {
 function parseDate(date: string) {
   return new Date(date);
 }
+
+export const metadata: Metadata = {
+  title: 'Jenny Wen — Notes',
+  description: 'Notes and blog posts by Jenny Wen',
+};
 
 export default async function NotesFeedPage() {
   const [substackPosts, notesPostsRaw] = await Promise.all([
