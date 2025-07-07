@@ -15,7 +15,6 @@ const socials = [
         "name": "Notes",
         "link": "/notes",
     },
-
     {
         "name": "Instagram",
         "link": "http://instagram.com/jennnywen",
@@ -40,15 +39,23 @@ const socials = [
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="tracking-tight md:px-2 md:py-1 px-0 py-1 bg-white text-black dark:bg-black dark:text-white">
-      <div className="bg-white text-lg dark:bg-black dark:text-white">
+    <main className="tracking-tight md:px-2 md:py-1 px-0 py-1 bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col">
+      {/* Mobile top nav */}
+      <div className="md:hidden flex flex-row justify-between items-center px-7 pt-4 pb-2 mb-6">
+        <div className="flex flex-row gap-6">
+          <Link href="/" className="text-lg no-underline hover:underline dark:text-white dark:hover:text-gray-300">Work</Link>
+          <Link href="/notes" className="text-lg no-underline hover:underline dark:text-white dark:hover:text-gray-300">Notes</Link>
+        </div>
+      </div>
+      {/* Name for mobile */}
+      <div className="bg-white text-lg dark:bg-black dark:text-white flex-1 w-full">
         <div className="grid grid-cols-12 px-7">
           <div className="col-span-11 lg:col-span-7 md:col-span-9 max-w-screen-lg pb-5 leading-relaxed">
             {children}
           </div>
 
-          {/* Socials Section */}
-          <div className="md:fixed md:right-8 md:top-2 lg:col-span-2 lg:col-start-11 md:col-span-2 md:col-start-12 col-span-12 pt-4 pb-20 transition-opacity">
+          {/* Sidebar for desktop */}
+          <div className="hidden md:block md:fixed md:right-8 md:top-2 lg:col-span-2 lg:col-start-11 md:col-span-2 md:col-start-12 col-span-12 pt-4 pb-20 transition-opacity">
             <div className="text-right md:mt-0 mt-6">
               {socials.map((social, index) => (
                 <Link
@@ -67,7 +74,23 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
           </div>
         </div>
       </div>
-
+      {/* Mobile bottom social nav */}
+      <nav className="md:hidden flex flex-row px-7 py-2 pb-10 w-full">
+        {socials.slice(2).map((social, idx, arr) => (
+          <>
+            <Link
+              key={social.name}
+              href={social.link}
+              className="text-left no-underline text-lg dark:text-white inline-block transition"
+              target={social.link.startsWith('http') ? "_blank" : undefined}
+              rel="noopener noreferrer"
+            >
+              {social.name}
+            </Link>
+            {idx < arr.length - 1 && <span className="mx-1 text-lg text-gray-400 dark:text-gray-500">/</span>}
+          </>
+        ))}
+      </nav>
       <ScrollToTop />
     </main>
   );
