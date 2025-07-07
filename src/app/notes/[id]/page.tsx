@@ -152,7 +152,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
 
   return (
     <PageLayout>
-      <article className="xl:mr-50 lg:mr-30 md:mr-20 max-w-prose blog bg-white text-black dark:bg-black dark:text-white">
+      <article className="col-span-11 lg:col-span-7 md:col-span-9 max-w-prose blog bg-white text-black dark:bg-black dark:text-white">
         <h1 className="text-4xl mb-24 mt-4 font-serif font-semibold tracking-tight">
           <Link href="/notes" className="text-black no-underline hover:text-gray-800 hover:no-underline dark:text-white dark:hover:text-gray-300">
             <span className="font-bold">Jenny Wen</span> — Notes
