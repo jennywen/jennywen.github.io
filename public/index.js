@@ -206,7 +206,7 @@ projects.forEach(project => {
 
     project.img.forEach((img, index) => {
         const imgClone = imgTemplate.content.cloneNode(true);
-        imgClone.querySelector("#image").src = "./assets/" + img;
+        imgClone.querySelector("#image").src = "/assets/" + img;
 
         if (project.img.length % 2) {
             imgClone.querySelector("#image").classList.add("col-span-12")
